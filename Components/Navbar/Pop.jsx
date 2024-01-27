@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { navBottom } from './data'
 import Link from 'next/link'
-import { slideDown } from '@/utils/motion'
-import dropdown from './nav-img/arrow.svg'
-import Image from 'next/image'
+import { slideDown } from '../../utils/motion'
+// import dropdown from './nav-img/arrow.svg'
+// import Image from 'next/image'
 
 const Pop = ({toggle,setToggle}) => {
 

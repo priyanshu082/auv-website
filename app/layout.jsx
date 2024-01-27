@@ -1,7 +1,7 @@
 import './globals.css'
 import Head from 'next/head'
-import Navbar from '@/Components/Navbar/Navbar'
-import Footer from '@/Components/Footer/Footer'
+import Navbar from '../Components/Navbar/Navbar'
+// import Footer from '@/Components/Footer/Footer'
 // import ScrollToTopButton from '@/Components/ScrollToTop'
 
 
