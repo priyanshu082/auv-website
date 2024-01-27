@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { navBottom } from "./data";
 import { motion } from "framer-motion";
-import ieee_logo from './nav-img/ieee mb white png.png'
+import logo from './img/auv1.png'
 import Image from "next/image";
 import { fadeIn } from "@/utils/motion";
 import { useState } from "react";
@@ -25,7 +25,7 @@ const Navbar = () => {
       onClick={()=>setActive("HOME")}
       href="/" 
       className="w-4/12 flex justify-start">
-        <Image src={ieee_logo} height={10} width={80} className="scale-110" />
+        <Image src={logo} height={10} width={80} className="scale-110" />
       </Link>
 
 
