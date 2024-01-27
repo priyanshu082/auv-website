@@ -25,7 +25,7 @@ const Navbar = () => {
       onClick={()=>setActive("HOME")}
       href="/" 
       className="w-4/12 flex justify-start">
-        <Image src={logo} height={10} width={80} className="scale-110" />
+        <Image src={logo} height={6} width={60} className="scale-110" />
       </Link>
 
 
