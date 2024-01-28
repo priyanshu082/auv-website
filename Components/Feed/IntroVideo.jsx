@@ -92,7 +92,7 @@ const IntroVideo = () => {
                 src='/video.mp4'
                 height={500}
                 width={500}
-                className=''
+                className='rounded-full'
                 autoPlay
                 loop
                 muted

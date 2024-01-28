@@ -5,10 +5,15 @@ import { useEffect, useRef } from 'react'
 // import IEEEClubs from '@/Components/Feed/IEEEClubs'
 // import Message from '@/Components/Feed/Message'
 // import Mission from '@/Components/Feed/Mission'
+import Navbar from '../Components/Navbar/Navbar'
 import IntroVideo from '../Components/Feed/IntroVideo'
 import { motion } from 'framer-motion'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
+
+ 
+
+
 
 gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
@@ -19,22 +24,37 @@ export default function Home() {
   useEffect(()=>{
     const dive=div.current
 
-    gsap.to(dive,{
+    gsap.to(main.current,{
       backgroundColor:"black",
       scrollTrigger:{
-        trigger:dive,
-        start:'top 20%',
-        end:'bottom 80%',
-        markers:true,
+        trigger:main.current,
+        start:'20% top',
+        //  end:'bottom 80%',
+        toggleActions: 'play reverse play reverse',
+      }
+    },
+    gsap.to(dive,{
+      scale:1.5,
+      scrollTrigger:{
+        trigger:main.current,
+        start:'20% top',
+        //  end:'bottom 80%',
+        toggleActions: 'play reverse play reverse',
       }
     })
-  },[])
+    )
+  },[])  
+
+ 
   return (
-    <motion.div ref={main} className='bg-primary' >
+    <motion.div ref={main} className='bg-white'>
+      <div className='pl-[40px]'>
+      <Navbar/>
      <About/>
-     <div ref={div} className='flex justify-center items-center h-[800px] mt-[300px]'>
+     <div ref={div} className='flex justify-center items-center h-[800px] mt-[200px]'>
     <IntroVideo />
      </div>
+      </div>
     </motion.div>
   )
 }

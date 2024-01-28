@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <meta property="image" content={metadata.image} />
     </Head>
     <body className="">
-    <Navbar/>
+   
       {children}
     {/* <Footer/> */}
       </body>
