@@ -21,8 +21,7 @@ export default function RootLayout({ children }) {
       <meta name="description" content={metadata.description} />
       <meta property="image" content={metadata.image} />
     </Head>
-    <body className="">
-   
+    <body >
       {children}
     {/* <Footer/> */}
       </body>

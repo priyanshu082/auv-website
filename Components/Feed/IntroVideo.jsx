@@ -61,7 +61,7 @@ import { motion } from 'framer-motion'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 const IntroVideo = () => {
 
@@ -69,21 +69,21 @@ const IntroVideo = () => {
     const videoRef = useRef(null);
     const div = useRef(null);
 
-    useEffect(() => {
+ useEffect(() => {
 
-        gsap.to(videoRef.current, {
-            scale:2,
-            scrollTrigger: {
-                trigger: videoRef.current,
+     gsap.to(videoRef.current, {
+         scale:2,
+         scrollTrigger: {
+             trigger: videoRef.current,
 
-                // start: 'top top',
-                 end: 'bottom top',
-                toggleActions:"restart pause reverse pause",
-                scrub: 0.1,
-                // markers: true,
-            },
-        });
-    }, []);
+             // start: 'top top',
+              end: 'bottom top',
+             toggleActions:"restart pause reverse pause",
+             scrub: 0.1,
+             // markers: true,
+         },
+     });
+   }, []);
 
     return (
         <motion.div className='flex justify-center items-center'>
