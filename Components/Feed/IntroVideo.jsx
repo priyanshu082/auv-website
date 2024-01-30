@@ -90,8 +90,8 @@ const IntroVideo = () => {
             <video
                 ref={videoRef}
                 src='/video.mp4'
-                height={500}
-                width={500}
+                height={800}
+                width={800}
                 className='rounded-full'
                 autoPlay
                 loop

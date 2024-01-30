@@ -36,7 +36,7 @@ import LocomotiveScroll from 'locomotive-scroll';
       >
 
       <motion.div  
-      data-scroll data-scroll-speed="0.1"
+      data-scroll data-scroll-speed="0.2"
       className=' lg:w-8/12'>
         <div className=' text-[30px] md:text-[40px] w-fit rounded-3xl pl-[10px] pr-[20px] md:pl-[10px]'>
           <span className=' text-black font-extrabold font-poppins '>About</span>
@@ -55,7 +55,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 
       <motion.div
-      data-scroll data-scroll-speed="0.1"
+      data-scroll data-scroll-speed="0.2"
         variants={slideUp(1.5, 1)}
         className='shadow-container flex flex-1 flex-col pt-[10px]'>
         <Image className='floating-img my-[0px] mx-[auto]' src={ghost} height={400} width={400} />
