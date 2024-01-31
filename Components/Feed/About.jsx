@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { lightSpeedIn, slideUp, textVariant } from '../../utils/motion'
+import {  slideUp, textVariant } from '../../utils/motion'
 import Image from 'next/image'
 import ghost from './img/ghost-img.png'
 // import BlinkingCursor from './Blinking'
@@ -10,21 +10,9 @@ import SectionWrapper from '../../HOC/SectionWrapper'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import LocomotiveScroll from 'locomotive-scroll';
-
 
 
  const About = () => {
-  
-
- 
-    
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
-      smooth: true,
-    });
-  }, []);
     
   
 
