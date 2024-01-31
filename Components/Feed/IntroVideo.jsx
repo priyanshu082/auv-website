@@ -13,7 +13,7 @@ const IntroVideo = () => {
 
 
     const videoRef = useRef(null);
-    const div = useRef(null);
+    const main = useRef(null);
 
  useEffect(() => {
 
@@ -31,7 +31,7 @@ const IntroVideo = () => {
          scrollTrigger: {
              trigger: videoRef.current,
              start: 'top 50%',
-             end: 'bottom 60%',
+             end: '80% 60%',
              toggleActions: 'play reverse play reverse',
              markers: true,
               onUpdate:(self)=>{
@@ -45,18 +45,19 @@ const IntroVideo = () => {
                  })
               }
          },
-     });
+     })
    }, []);
 
     return (
-        <motion.div className='flex justify-center items-center'>
+        <motion.div ref={main} className='flex justify-center items-center'>
             <video
                 ref={videoRef}
                 src='/video.mp4'
-                height={800}
-                width={800}
-                className='rounded-full opacity-0'
+                // height={800}
+                // width={800}
+                className='rounded-[10000px] opacity-0 h-[800px] w-[800px]'
                 autoPlay
+                loop
                 muted
             />
         </motion.div>

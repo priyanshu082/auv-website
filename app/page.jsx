@@ -28,11 +28,12 @@ export default function Home() {
   const dive=div.current
 
    gsap.to(main.current,{
-     backgroundColor:"black",
+      backgroundColor:"black",
      height:"200%",
+     delay:0,
      scrollTrigger:{
        trigger:main.current,
-       start:'20% top',
+       start:'17% top',
        //  end:'bottom 80%',
        toggleActions: 'play reverse play reverse',
      }
@@ -61,7 +62,7 @@ export default function Home() {
       <div className='pl-[40px]'>
       <Navbar/>
       <About/>
-     <div ref={div} className='flex justify-center items-center h-[1000px]'>
+     <div ref={div} className='flex justify-center items-center mt-[100px] h-auto overflow-hidden'>
     <IntroVideo />
      </div>
       </div>
