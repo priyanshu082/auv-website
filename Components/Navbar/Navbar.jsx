@@ -6,13 +6,17 @@ import { motion } from "framer-motion";
 import logo from './img/auv1.png'
 import Image from "next/image";
 import { fadeIn } from "../../utils/motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Pop from "./Pop";
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
   const [active ,setActive]=useState("")
+
+  const nav=useRef(null);
+
+
 
   return (
     <motion.div

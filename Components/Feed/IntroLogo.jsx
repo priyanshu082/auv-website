@@ -4,7 +4,9 @@ import React from 'react'
 
 const IntroLogo = () => {
   return (
-    <div>IntroLogo</div>
+    <div>
+      
+    </div>
   )
 }
 
