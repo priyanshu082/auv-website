@@ -41,7 +41,7 @@ export default function Home() {
     })
 
     tl.to(main.current, {
-      backgroundColor: "white",
+      backgroundColor: "black",
     })
 
     /*const tlVideoDiv = gsap.timeline({
@@ -78,24 +78,25 @@ export default function Home() {
     gsap.to(videoRef1.current,{
       scrollTrigger:{
         trigger:parentVideoDiv.current,
-        scrub:3,
+        scrub:false,
         //markers:true,
         start:'top 80%',
         end:'bottom 0%',
         toggleActions: 'play reverse play reverse',
         // pin:true,
       },
-      scale:2,
-       y:"200px",
-      alignItems:"center",
+    
+     // alignItems:"center",
     })
     gsap.to(videoRef1.current,{
+      scale:2,
+      y:"200px",
       scrollTrigger:{
         trigger:videoRef1.current,
-        scrub:3,
-       // markers:true,
+        scrub:1,
+        markers:true,
         start:'top 0%',
-        end:'1000px 0%',
+        end:'3000px 0%',
         toggleActions: 'play reverse play reverse',
          pin:true,
          pinSpacing:false,
@@ -108,7 +109,7 @@ export default function Home() {
 
 
   return (
-    <div ref={main} className='flex flex-col bg-white h-full pl-[40px] overflow-hidden'>
+    <div ref={main} className='flex flex-col bg-white pl-[40px]'>
 
       <div>
         <Navbar />
@@ -116,12 +117,48 @@ export default function Home() {
       <About />
       
 
-      <div ref={parentVideoDiv} className='mt-[200px] flex justify-center'>
+      <div ref={parentVideoDiv} className='mt-[200px] flex flex-col justify-center items-center'>
 
-        <video ref={videoRef1} src='/video.mp4' className='opacity-0.5 w-[600px] ' autoPlay loop muted
+        <video ref={videoRef1} src='/video.mp4' className='opacity-0.5 w-[600px]' autoPlay loop muted
         />
 
         {/* <video ref={videoRef2} src='/video2.mp4' className='opacity-0.5 w-[600px]' autoPlay loop muted /> */}
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[300px] text-[50px] text-white'>
+          AUV
+        </div>
       </div>
     
     </div>

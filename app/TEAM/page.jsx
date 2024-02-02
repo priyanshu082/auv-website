@@ -65,8 +65,44 @@ const page = () => {
       
 
    
-      <div  ref={mainPage2}  className=' flex justify-center w-full bg-blue-400 rounded-[100px] h-[100vh]'>
-       <video  ref={page2} src='/video2.mp4' className=' h-[100px]'/>
+      <div  ref={mainPage2}  className=' flex flex-col justify-center w-full bg-blue-400 rounded-[100px] h-[100vh]'>
+       <video  ref={page2} src='/video2.mp4' className='absolute h-[100px]'/>
+       <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
+        <div className='z-20 relative mb-[100px] text-[50px] text-white'>
+          AUV
+        </div>
       </div>
 
       <div data-scroll className='flex justify-center items-center page3 h-[100vh] w-1/2 bg-yellow-500'>
