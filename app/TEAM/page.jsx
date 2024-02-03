@@ -3,13 +3,13 @@
 import React,{useEffect, useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import LocomotiveScroll from 'locomotive-scroll'
+// import LocomotiveScroll from 'locomotive-scroll'
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 
-const page = () => {
+const Page = () => {
 
   const page2=useRef(null);
   const mainPage2=useRef(null);
@@ -17,10 +17,10 @@ const page = () => {
   useEffect(()=>{
 
   
-      //  const scroll = new LocomotiveScroll({
-      //    el: document.querySelector('[data-scroll-container]'),
-      //     smooth: 0.3,
-      //  });
+        // const scroll = new LocomotiveScroll({
+        //   el: document.querySelector('[data-scroll-container]'),
+        //    smooth: 0.3,
+        // });
 
 
         gsap.to(page2.current,{
@@ -113,4 +113,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
