@@ -22,9 +22,9 @@ const IntroLogo = () => {
     const tl=gsap.timeline({
       scrollTrigger:{
         trigger:main.current,
-        //markers:true,
+        markers:true,
         start:"10px top",
-        end:"bottom top",
+        end:"+=300px top",
         scrub:2,
       }
     })
@@ -36,9 +36,8 @@ const IntroLogo = () => {
     
 
     tl.to(movingText.current,{
-      y:"-2000px",
+      y:"-2500px",
       scrollTrigger:{
-  
         scrub:2,
        // markers:true,
         //pin:true,

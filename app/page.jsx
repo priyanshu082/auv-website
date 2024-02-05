@@ -123,7 +123,7 @@ export default function Home() {
 
       <div ref={parentVideoDiv} className='flex flex-col'>
 
-        <video ref={videoRef1} src='/video.mp4' className='absolute opacity-0 w-[100vw]' loop autoPlay muted
+        <video ref={videoRef1} src='/Comp_1.mp4' className='absolute opacity-0 w-[100vw]' loop autoPlay muted
         /> 
 
         {/* <video ref={videoRef2} src='/video2.mp4' className='opacity-0.5 w-[600px]' autoPlay loop muted /> */}
