@@ -3,31 +3,24 @@
 import React,{useEffect, useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-// import LocomotiveScroll from 'locomotive-scroll'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 
-const Page = () => {
+const page = () => {
 
   const page2=useRef(null);
   const mainPage2=useRef(null);
 
   useEffect(()=>{
 
-  
-        // const scroll = new LocomotiveScroll({
-        //   el: document.querySelector('[data-scroll-container]'),
-        //    smooth: 0.3,
-        // });
-
-
         gsap.to(page2.current,{
           scrollTrigger:{
             trigger:mainPage2.current,
             scrub:3,
-            //markers:true,
+            markers:true,
             start:'top 80%',
             end:'bottom 0%',
             toggleActions: 'play reverse play reverse',
@@ -50,16 +43,19 @@ const Page = () => {
           },
         })
       
+         
 
   },[])
 
   return (
-    <div  data-scroll-container  className='main flex flex-col justify-center items-center'>
+  
+
+    <div className='main flex flex-col justify-center items-center'>
 
       <div  data-scroll className=' flex space-x-10 flex-row justify-center items-center page1 w-full h-[100vh] bg-blue-200'>
 
-        <h1 data-scroll  className='bg-black p-[20px]'>page1</h1>
-        <h1 data-scroll  className='bg-white p-[20px]'>page2</h1>
+        <h1 data-scroll data-scroll-speed="10"  className='bg-black p-[20px]'>page1</h1>
+        <h1 data-scroll data-scroll-speed="-10"  className='bg-white p-[20px]'>page2</h1>
       </div>
     
       
@@ -110,7 +106,8 @@ const Page = () => {
       </div>
 
     </div>
+
   )
 }
 
-export default Page
+export default page

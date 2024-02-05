@@ -1,5 +1,7 @@
 // tailwind.config.js
 
+
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,10 +13,12 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        primary:['Oswald','sans-serif'],
+        secondary:['Protest Riot','sans-serif'],
       },
       colors: {
         primary: "#F8F0E3",

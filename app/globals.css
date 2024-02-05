@@ -1,30 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Protest+Riot&display=swap');
 
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .button {
     display: inline-block;
     margin-left: 20px;
     padding:8px 20px;
     border-radius: 5px;
-    font-weight: 700;
-    font-size:18px;
     transition: color 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out ;
   }
 
   .transition-line {
-    margin-top: 5px;
+    margin-top: 3px;
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    background-color: white; 
+    background-color: black; 
     transition: width 0.3s ease; 
     
   }
@@ -32,10 +30,11 @@
   /* Hover effect */
   .button:hover .transition-line{
     width: 100%;
+    background-color: grey;
   }
 
   .button:hover{
-    color:whitesmoke;
+    color: grey;
     transform:scale(1.25)
   }
 
@@ -234,3 +233,11 @@
   /* border-radius: 80px; */
 
 }
+
+.bg-Intro{
+  background-image: url("../Components/Feed/img/machine-img.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
