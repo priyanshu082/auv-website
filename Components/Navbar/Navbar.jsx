@@ -26,11 +26,10 @@ const Navbar = () => {
       onClick={()=>setActive("HOME")}
       href="/" 
       className="w-4/12 flex justify-start">
-        <motion.div 
-        variants={textVariant(1)}
-        className="font-bold font-secondary text-[28px]">
+        {/* <div className="font-bold font-poppins gradient-text text-[28px]">
           MTS-AUV
-          </motion.div>
+          </div> */}
+          <Image src={logo} height={80} width={80}/>
       </Link>
 
 
@@ -39,9 +38,9 @@ const Navbar = () => {
           <Link
           onClick={()=>setActive(items.name)}
            href={items.link} key={index} 
-           className={`${active===items.name ? "text-white scale-125" : "text-black"} button flex flex-col justify-normal items-center font-secondary text-[25px]` }>
+           className={`${active===items.name ? "text-gray-300 scale-110" : "gradient-text"} button flex flex-col justify-normal items-center font-poppins font-bold text-[22px] hover:scale-110` }>
             {items.name}
-            <div className="transition-line"/>
+            {/* <div className="transition-line"/> */}
           </Link>
         ))}
       </motion.div>

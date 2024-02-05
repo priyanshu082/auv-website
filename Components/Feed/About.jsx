@@ -6,30 +6,17 @@ import Image from 'next/image'
 import ghost from './img/ghost-img.png'
 // import BlinkingCursor from './Blinking'
 import SectionWrapper from '../../HOC/SectionWrapper'
-// import { data } from '../TEAM/ieeestbmembers'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
-gsap.registerPlugin(ScrollTrigger)
+
  const About = () => {
-
-
-  useEffect(()=>{
-
-  })
-    
-  
 
   return (
     <motion.div
       variants={textVariant(1)}
-      className='flex flex-col lg:flex-row font-poppins mt-[50px]'
-      data-scroll-container
-      >
+      className='flex flex-col lg:flex-row font-poppins mt-[50px]' >
 
       <motion.div  
-      data-scroll data-scroll-speed="0.2"
       className=' lg:w-8/12'>
         <div className=' text-[30px] md:text-[60px] w-fit rounded-3xl pl-[10px] font-secondary font-normal pr-[20px] md:pl-[10px]'>
           <span className=' text-black font-extrabold'>About</span>

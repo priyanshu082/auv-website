@@ -25,9 +25,7 @@ export default function Home() {
   
 
   useEffect(() => {
-    
 
-   
 
      function waste() {
       /*const tlVideoDiv = gsap.timeline({
@@ -63,8 +61,6 @@ export default function Home() {
 
     }
 
-
-
     //main div
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -75,9 +71,9 @@ export default function Home() {
     })
 
     //gsap for chnging the background color of page
-    tl.to(main.current, {
+   /* tl.to(main.current, {
       backgroundColor: "black",
-    })
+    })*/
 
     
     
@@ -85,35 +81,30 @@ export default function Home() {
     gsap.to(videoRef1.current,{
       scrollTrigger:{
         trigger:parentVideoDiv.current,
-        //markers:true,
+       // markers:true,
         start:'top 70%',
-        end:'bottom 60%',
+        end:'80% 60%',
         toggleActions: 'play reverse play reverse',
       },
       opacity:1,
-      duration:0.5,
+      // duration:0.5,
     })
 
     gsap.to(videoRef1.current,{
       y:"10vh",
       width:"50vw",
       marginLeft:"0",
-   duration:1.5,
       scrollTrigger:{
         trigger:videoRef1.current,
-        // scrub:3,
+         scrub:3,
         //markers:true,
         start:'100px 0',
-        end:'+=3000px 0%',
+        end:'+=800px 0%',
         toggleActions: 'play reverse play reverse',
          pin:true,
          pinSpacing:true,
       },
     })
-
-
-   
-
 
   }, []);
 
@@ -123,60 +114,47 @@ export default function Home() {
 
 
 
-    <div ref={main} className='flex flex-col bg-white overflow-x-hidden'>
-
-      <div ref={nav} className='pl-[0px]'>
+    <div className='flex flex-col bg-black overflow-x-hidden'>
+      <div className='pl-[40px]'>
         <Navbar />
       </div>
-
-      <div className="h-full">
-      {/* <About /> */}
+    
       <IntroLogo/>
-      </div>
-      
 
-      <div ref={parentVideoDiv} className=' flex flex-col'>
+      <div ref={parentVideoDiv} className='flex flex-col'>
 
-        {/* <video ref={videoRef1} src='/video.mp4' className='absolute shadow-violet-300 rounded-[100px] opacity-0  w-[100vw]' loop autoPlay muted
-        /> */}
+        <video ref={videoRef1} src='/video.mp4' className='absolute opacity-0 w-[100vw]' loop autoPlay muted
+        /> 
 
         {/* <video ref={videoRef2} src='/video2.mp4' className='opacity-0.5 w-[600px]' autoPlay loop muted /> */}
         <div className='z-20 flex flex-col justify-center items-center'>
 
-          
-
-
-        <div className='mb-[60vh] text-slate-300 flex flex-col '>
-        <h6 ref={movingDiv} className='text-[18vw] font-secondary'>
+   
+        <div className='mt-[100vh]'>
+        <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
+         <h6 className='text-[10vw] font-poppins '>
           AUV
-         </h6>
+          </h6>
+          <p className='pt-[20px]'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi tempora quia cumque dicta expedita doloribus quas ullam aliquam sunt blanditiis facilis incidunt iste ipsam deserunt eaque, eos veritatis asperiores!
+          </p>
+          </div>
+
+        <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
+         <h6 className='text-[10vw] font-poppins '>
+          AUV
+          </h6>
+          <p className='pt-[20px]'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi tempora quia cumque dicta expedita doloribus quas ullam aliquam sunt blanditiis facilis incidunt iste ipsam deserunt eaque, eos veritatis asperiores!
+          </p>
+          </div>
+
         </div>
 
-        <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
-         <h6 className='text-[10vw] font-secondary '>
-          AUV
-          </h6>
-          <p className='pt-[20px]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi tempora quia cumque dicta expedita doloribus quas ullam aliquam sunt blanditiis facilis incidunt iste ipsam deserunt eaque, eos veritatis asperiores!
-          </p>
-          </div>
 
-        <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
-         <h6 className='text-[10vw] font-secondary '>
-          AUV
-          </h6>
-          <p className='pt-[20px]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis animi tempora quia cumque dicta expedita doloribus quas ullam aliquam sunt blanditiis facilis incidunt iste ipsam deserunt eaque, eos veritatis asperiores!
-          </p>
-          </div>
-
-       
-
-       
-        
         </div>
       </div>
-    
+
     </div>
 
 

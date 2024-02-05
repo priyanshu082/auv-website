@@ -237,7 +237,12 @@
 .bg-Intro{
   background-image: url("../Components/Feed/img/machine-img.png");
   background-size: cover;
-  background-position: center;
+background-position-y: -65vh;
 }
 
+.gradient-text {
+  background: linear-gradient(180deg, #ffffff 5.9%, #090909 98.5%);
+  background-clip: text;
+  color: transparent;
+}
 
