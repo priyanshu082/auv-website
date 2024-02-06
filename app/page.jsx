@@ -80,7 +80,7 @@ export default function Home() {
     gsap.to(videoRef1.current,{
       scrollTrigger:{
         trigger:parentVideoDiv.current,
-        markers:true,
+        //markers:true,
         start:'top top',
         end:'+=500px top',
         toggleActions: 'play reverse play reverse',
@@ -95,7 +95,7 @@ export default function Home() {
       scrollTrigger:{
         trigger:videoRef1.current,
          scrub:3,
-        markers:true,
+        //markers:true,
         start:'top 0',
         end:'+=600px 0%',
         toggleActions: 'play reverse play reverse',
@@ -118,9 +118,11 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <ScrollyVideo  src='/Comp_1.mp4' pin="true"/> 
+     
 
-      {/* <IntroLogo/> */}
+       <IntroLogo/> 
+
+       <ScrollyVideo  src='/Comp_1.mp4' pin="true"/> 
 
       <div ref={parentVideoDiv} className='flex flex-col mx-[20vh]'>
 
