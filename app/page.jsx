@@ -114,7 +114,7 @@ export default function Home() {
 
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
 
-      <div className='pl-[40px] pb-[200px]'>
+      <div className='pl-[40px]'>
         <Navbar />
       </div>
 
