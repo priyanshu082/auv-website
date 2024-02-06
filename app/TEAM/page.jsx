@@ -1,6 +1,6 @@
 'use client'
 
-import React,{useEffect, useRef} from 'react'
+import React,{useEffect} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -13,10 +13,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const page = () => {
 
-  const  video=useRef(null)
 
-  const page2=useRef(null);
-  const mainPage2=useRef(null);
+  
 
   /*useEffect(()=>{
 
@@ -53,7 +51,7 @@ const page = () => {
   return (
     
 
-    <div ref={video} className='scroll-video pt-[400px]'>
+    <div className='scroll-video pt-[400px]'>
 
      
        {/* <div  data-scroll className=' flex space-x-10 flex-row justify-center items-center page1 w-full h-[100vh] bg-blue-200'>
