@@ -45,7 +45,7 @@ const IntroLogo = () => {
     <div 
     ref={main}
     className="bg-Intro h-[100vh] w-[100vw] flex justify-center items-center">
-      <div ref={movingText} className='gradient-text mb-[240px] font-poppins text-[170px] z-50 flex justify-center font-extrabold  text-center'>
+      <div ref={movingText} className='gradient-text mb-[240px] font-poppins text-[80px] md:text-[170px] z-50 flex justify-center font-extrabold text-center'>
         MTS-AUV ZHCET
       </div>
     </div>

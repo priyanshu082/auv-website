@@ -11,7 +11,7 @@ import Pop from "./Pop";
 
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] =useState(false)
   const [active ,setActive]=useState("")
 
   const nav=useRef(null);
@@ -26,9 +26,6 @@ const Navbar = () => {
       onClick={()=>setActive("HOME")}
       href="/" 
       className="w-4/12 flex justify-start">
-        {/* <div className="font-bold font-poppins gradient-text text-[28px]">
-          MTS-AUV
-          </div> */}
           <Image src={logo} height={80} width={80}/>
       </Link>
 
@@ -45,17 +42,17 @@ const Navbar = () => {
         ))}
       </motion.div>
 
-        <motion.div>
+        {/* <motion.div>
           <div onClick={()=>(setToggle(!toggle))}
           className={`md:hidden `}>
           <div className={`bar bar1 ${toggle ? 'change' : ''}`}></div>
           <div className={`bar bar2 ${toggle ? 'change' : ''}`}></div>
           <div className={`bar bar3 ${toggle ? 'change' : ''}`}></div>
           </div>
-         <Pop
+          <Pop
         toggle={toggle}
         setToggle={setToggle}/>
-          </motion.div>
+          </motion.div> */}
     </motion.div>
   )
 }
