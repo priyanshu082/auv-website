@@ -3,7 +3,7 @@
 import React,{useEffect, useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.esm.jsx'
+
 
 
 
@@ -53,9 +53,8 @@ const page = () => {
   return (
     
 
-    <div ref={video} className='scroll-video'>
+    <div ref={video} className='scroll-video pt-[400px]'>
 
-     <ScrollyVideo src="/Comp_1.mp4" />
      
        {/* <div  data-scroll className=' flex space-x-10 flex-row justify-center items-center page1 w-full h-[100vh] bg-blue-200'>
 
