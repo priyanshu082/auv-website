@@ -1,9 +1,5 @@
 import './globals.css'
-import Head from 'next/head'
-import Navbar from '../Components/Navbar/Navbar'
-
-// import Footer from '@/Components/Footer/Footer'
-// import ScrollToTopButton from '@/Components/ScrollToTop'
+// import Head from 'next/head'
 
 
 export const metadata = {
@@ -17,11 +13,11 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-    <Head>
+    <head>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       <meta property="image" content={metadata.image} />
-    </Head>
+    </head>
     <body className='h-[2000px]'>
       {children}
     {/* <Footer/> */}

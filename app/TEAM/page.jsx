@@ -3,6 +3,8 @@
 import React,{useEffect, useRef} from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.esm.jsx'
+
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -11,16 +13,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 const page = () => {
 
+  const  video=useRef(null)
+
   const page2=useRef(null);
   const mainPage2=useRef(null);
 
-  useEffect(()=>{
+  /*useEffect(()=>{
 
         gsap.to(page2.current,{
           scrollTrigger:{
             trigger:mainPage2.current,
             scrub:3,
-            markers:true,
+            //markers:true,
             start:'top 80%',
             end:'bottom 0%',
             toggleActions: 'play reverse play reverse',
@@ -42,17 +46,18 @@ const page = () => {
              pinSpacing:false,
           },
         })
-      
-         
+  },[])*/
 
-  },[])
 
-  return (
   
+  return (
+    
 
-    <div className='main flex flex-col justify-center items-center'>
+    <div ref={video} className='scroll-video'>
 
-      <div  data-scroll className=' flex space-x-10 flex-row justify-center items-center page1 w-full h-[100vh] bg-blue-200'>
+     <ScrollyVideo src="/Comp_1.mp4" />
+     
+       {/* <div  data-scroll className=' flex space-x-10 flex-row justify-center items-center page1 w-full h-[100vh] bg-blue-200'>
 
         <h1 data-scroll data-scroll-speed="10"  className='bg-black p-[20px]'>page1</h1>
         <h1 data-scroll data-scroll-speed="-10"  className='bg-white p-[20px]'>page2</h1>
@@ -103,7 +108,7 @@ const page = () => {
 
       <div data-scroll className='flex justify-center items-center page3 h-[100vh] w-1/2 bg-yellow-500'>
       page 3
-      </div>
+      </div> */}
 
     </div>
 

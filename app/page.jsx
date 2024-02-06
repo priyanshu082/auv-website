@@ -1,13 +1,10 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import About from '../Components/Feed/About'
 import Navbar from '../Components/Navbar/Navbar'
-import IntroVideo from '../Components/Feed/IntroVideo'
-import { motion } from 'framer-motion'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import IntroLogo from '../Components/Feed/IntroLogo'
-
+import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx'
 
 
 
@@ -27,41 +24,43 @@ export default function Home() {
   useEffect(() => {
 
 
-     function waste() {
-      /*const tlVideoDiv = gsap.timeline({
-      scrollTrigger: {
-        trigger: parentVideoDiv.current,
-        scrub: 1,
-        start: "top 40%",
-        end: "bottom top",
-        toggleActions: 'play reverse play reverse',
-        markers: true,
-      }
-    })
+   
+    //  function waste() {
+    //   /*const tlVideoDiv = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: parentVideoDiv.current,
+    //     scrub: 1,
+    //     start: "top 40%",
+    //     end: "bottom top",
+    //     toggleActions: 'play reverse play reverse',
+    //     markers: true,
+    //   }
+    // })
 
-    tlVideoDiv.to(videoRef1.current, {
-      // y:"30vh",
-      scale: 1.3,
-      opacity: 1,
-      y: 200,
-    })
+    // tlVideoDiv.to(videoRef1.current, {
+    //   // y:"30vh",
+    //   scale: 1.3,
+    //   opacity: 1,
+    //   y: 200,
+    // })
 
-    gsap.to(videoRef1.current, {
-      scrollTrigger: {
-        trigger: videoRef1.current,
-        scrub: 3,
-        markers: true,
-        start: 'top 70%',
-        end: '1000px 0%',
-        toggleActions: 'play reverse play reverse',
-        pin: true,
-        pinSpacing: false,
-      },
-    })*/
+    // gsap.to(videoRef1.current, {
+    //   scrollTrigger: {
+    //     trigger: videoRef1.current,
+    //     scrub: 3,
+    //     markers: true,
+    //     start: 'top 70%',
+    //     end: '1000px 0%',
+    //     toggleActions: 'play reverse play reverse',
+    //     pin: true,
+    //     pinSpacing: false,
+    //   },
+    // })*/
 
-    }
+    // }
 
     //main div
+    
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: main.current,
@@ -71,9 +70,9 @@ export default function Home() {
     })
 
     //gsap for chnging the background color of page
-   /* tl.to(main.current, {
-      backgroundColor: "black",
-    })*/
+    // tl.to(main.current, {
+    //   backgroundColor: "black",
+    // })
 
     
     
@@ -81,9 +80,9 @@ export default function Home() {
     gsap.to(videoRef1.current,{
       scrollTrigger:{
         trigger:parentVideoDiv.current,
-       // markers:true,
-        start:'top 70%',
-        end:'80% 60%',
+        markers:true,
+        start:'top top',
+        end:'+=500px top',
         toggleActions: 'play reverse play reverse',
       },
       opacity:1,
@@ -91,18 +90,17 @@ export default function Home() {
     })
 
     gsap.to(videoRef1.current,{
-      y:"10vh",
-      width:"50vw",
-      marginLeft:"0",
+      y:"0px",
+      // scale:1.2,
       scrollTrigger:{
         trigger:videoRef1.current,
          scrub:3,
-        //markers:true,
-        start:'100px 0',
-        end:'+=800px 0%',
+        markers:true,
+        start:'top 0',
+        end:'+=600px 0%',
         toggleActions: 'play reverse play reverse',
          pin:true,
-         pinSpacing:true,
+         pinSpacing:false,
       },
     })
 
@@ -114,22 +112,24 @@ export default function Home() {
 
 
 
-    <div className='flex flex-col bg-black overflow-x-hidden'>
+    <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden'>
+
       <div className='pl-[40px]'>
         <Navbar />
       </div>
-    
+
       <IntroLogo/>
 
-      <div ref={parentVideoDiv} className='flex flex-col'>
+      <div ref={parentVideoDiv} className='flex flex-col mx-[20vh]'>
 
-        <video ref={videoRef1} src='/Comp_1.mp4' className='absolute opacity-0 w-[100vw]' loop autoPlay muted
-        /> 
+     <div ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px]'>
+        <ScrollyVideo  src='/Comp_1.mp4' transitionSpeed="1"  /> 
+        </div> 
 
-        {/* <video ref={videoRef2} src='/video2.mp4' className='opacity-0.5 w-[600px]' autoPlay loop muted /> */}
-        <div className='z-20 flex flex-col justify-center items-center'>
+        {/* <video src="/Comp_1.mp4" ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px]'/> */}
 
-   
+
+{/*   <div className='z-20 flex flex-col justify-center items-center'>
         <div className='mt-[100vh]'>
         <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
          <h6 className='text-[10vw] font-poppins '>
@@ -149,10 +149,10 @@ export default function Home() {
           </p>
           </div>
 
-        </div>
+        </div> 
 
 
-        </div>
+        </div> */}
       </div>
 
     </div>
