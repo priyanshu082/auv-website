@@ -5,7 +5,7 @@ import { navBottom } from "./data";
 import { motion } from "framer-motion";
 import logo from './img/auv1.png'
 import Image from "next/image";
-import { fadeIn, slideIn, textVariant } from "../../utils/motion";
+
 import { useRef, useState } from "react";
 import Pop from "./Pop";
 

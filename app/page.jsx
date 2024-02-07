@@ -114,22 +114,18 @@ export default function Home() {
 
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
 
-      <div className='pl-[40px]'>
+      
         <Navbar />
-      </div>
-
-     
 
        <IntroLogo/> 
 
-       <ScrollyVideo  src='/Comp_1.mp4' pin="true"/> 
+       {/* <ScrollyVideo  src='/Comp_1.mp4' pin="true"/>  */}
 
       <div ref={parentVideoDiv} className='flex flex-col mx-[20vh]'>
 
-     {/* <div ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px] pt-[200px]'>
-        </div>   */}
+     {/* <div ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px] pt-[200px]'> </div>   */}
        
-        {/* <video src="/Comp_1.mp4" ref={videoRef1} playbackRate className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px]'/> */}
+        <video src="/Comp_1.mp4" ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px]'/>
 
 
 {/*   <div className='z-20 flex flex-col justify-center items-center'>

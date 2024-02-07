@@ -39,11 +39,7 @@
   }
 
 
-  .nav-icon {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
+
   
   .bar {
     width: 20px;

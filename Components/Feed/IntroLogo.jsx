@@ -1,4 +1,4 @@
-'use cleint'
+'use client'
 
 import React, { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
