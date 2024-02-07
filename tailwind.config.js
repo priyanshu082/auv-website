@@ -24,13 +24,6 @@ module.exports = {
         primary: "#F8F0E3",
         secondary: "#aaa6c3",
         tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
-        text:{
-        primary:"#000000",
-          secondary:"#000000"
-        },
       },
       screens: {
         'sm': '640px',
