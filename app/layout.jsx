@@ -1,5 +1,5 @@
 import './globals.css'
-// import Head from 'next/head'
+ import Head from 'next/head'
 
 
 export const metadata = {
@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-    <head>
+    <Head>
       <title>{metadata.title}</title>
       <meta name="description" content={metadata.description} />
       <meta property="image" content={metadata.image} />
-    </head>
+    </Head>
     <body className='h-[2000px]'>
       {children}
     {/* <Footer/> */}
