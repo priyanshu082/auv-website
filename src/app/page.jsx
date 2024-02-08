@@ -16,15 +16,13 @@ export default function Home() {
   const parentVideoDiv = useRef(null)
   const main = useRef(null)
   const videoRef1 = useRef(null)
-  const videoRef2 = useRef(null)
-  const nav = useRef(null)
-  const movingDiv=useRef(null);
+  const scrollyVideoRef=useRef(null)
+  // const videoRef2 = useRef(null)
+  // const nav = useRef(null)
+  // const movingDiv=useRef(null);
   
 
-  useEffect(() => {
-
-
-   
+  useEffect(() => {   
     //  function waste() {
     //   /*const tlVideoDiv = gsap.timeline({
     //   scrollTrigger: {
@@ -107,29 +105,33 @@ export default function Home() {
   }, []);
 
 
+ const src="/Comp_1.mp4"
+ const transitionSpeed= 100
+ const scrollyVideoContainer=scrollyVideoRef.current
+    // const frameThreshold= frameThreshold
+    // const cover= cover
+    // const sticky= sticky
+    // const full= full
+    // const trackScroll= trackScroll
+    // const useWebCodecs= useWebCodecs
+    // const debug= debug
+    // const videoPercentage= videoPercentageRef.currents
+    
+ 
 
   return (
-
-
-
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
-
-      
         <Navbar />
-
-
-       <ScrollyVideo  src='/Comp_1.mp4'/> 
+       {/* <ScrollyVideo src={src} />  */}
        <IntroLogo/> 
 
-      <div ref={parentVideoDiv} className='flex flex-col mx-[20vh]'>
+      <div ref={parentVideoDiv} className='flex flex-col'>
 
-     {/* <div ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px] pt-[200px]'> </div>   */}
-       
-        {/* <video src="/Comp_1.mp4" ref={videoRef1} className='absolute opacity-0 w-[80vw] mt-[100px] rounded-[70px]'/> */}
+    <video src="/Comp_1.mp4" ref={videoRef1} className='absolute opacity-0 w-[80vw] rounded-[70px]' autoPlay loop muted/>
 
 
-{/*   <div className='z-20 flex flex-col justify-center items-center'>
-        <div className='mt-[100vh]'>
+  <div className='z-20 flex flex-col justify-center items-center'>
+      
         <div className='mb-[7vh] text-slate-300 flex flex-col ml-[90vh]'>
          <h6 className='text-[10vw] font-poppins '>
           AUV
@@ -150,8 +152,6 @@ export default function Home() {
 
         </div> 
 
-
-        </div> */}
       </div>
 
     </div>
