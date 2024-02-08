@@ -20,13 +20,13 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="bg-black flex flex-row justify-between items-center pt-[20px]" >
+      className="bg-black flex flex-row justify-between items-center pt-[10px]" >
 
       <Link 
       onClick={()=>setActive("HOME")}
       href="/" 
       className="w-4/12 flex justify-start">
-          <Image src={logo} height={80} width={80}/>
+          <Image src={logo} height={60} width={60}/>
       </Link>
 
 
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link
           onClick={()=>setActive(items.name)}
            href={items.link} key={index} 
-           className={`${active===items.name ? "text-gray-300 scale-110" : "gradient-text"} button flex flex-col justify-normal items-center font-poppins font-bold text-[22px] hover:scale-110` }>
+           className={`${active===items.name ? "text-gray-300 scale-110" : "text-gray-200"} button flex flex-col justify-normal items-center font-poppins font-light text-[19px] hover:scale-110` }>
             {items.name}
             {/* <div className="transition-line"/> */}
           </Link>

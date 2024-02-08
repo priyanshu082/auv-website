@@ -95,7 +95,7 @@ export default function Home() {
          scrub:3,
         //markers:true,
         start:'top 0',
-        end:'+=600px 0%',
+        end:'+=600px 0',
         toggleActions: 'play reverse play reverse',
          pin:true,
          pinSpacing:false,
@@ -104,31 +104,15 @@ export default function Home() {
 
   }, []);
 
-
- const src="/Comp_1.mp4"
- const transitionSpeed= 100
- const scrollyVideoContainer=scrollyVideoRef.current
-    // const frameThreshold= frameThreshold
-    // const cover= cover
-    // const sticky= sticky
-    // const full= full
-    // const trackScroll= trackScroll
-    // const useWebCodecs= useWebCodecs
-    // const debug= debug
-    // const videoPercentage= videoPercentageRef.currents
-    
- 
-
   return (
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
         <Navbar />
        {/* <ScrollyVideo src={src} />  */}
        <IntroLogo/> 
 
-      <div ref={parentVideoDiv} className='flex flex-col'>
+      {/* <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh]'>
 
-    <video src="/Comp_1.mp4" ref={videoRef1} className='absolute opacity-0 w-[80vw] rounded-[70px]' autoPlay loop muted/>
-
+    <video src="/Comp_1.mp4" ref={videoRef1} className='absolute mt-[100px] opacity-0 w-[100%] sm:w-[100%] rounded-[70px]' autoPlay loop muted/>
 
   <div className='z-20 flex flex-col justify-center items-center'>
       
@@ -152,7 +136,7 @@ export default function Home() {
 
         </div> 
 
-      </div>
+      </div> */}
 
     </div>
 
