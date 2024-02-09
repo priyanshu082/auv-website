@@ -237,12 +237,20 @@ background-position-y: -65vh;
 }
 
 .gradient-text {
-  background: linear-gradient(180deg, #3e6c68 120%, #000000 98.5%);
+  background: linear-gradient(180deg, #bfbcbc 10%, #000000 99.5%);
   background-clip: text;
   color: transparent;
+ 
 }
 
 .image-transition,
 .video-transition {
   transition: opacity 1s ease-in-out;
+}
+
+/* //for shadown of text */
+
+.text:hover span:nth-child(1) {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 10px #19e6ea, 0 0 30px #ffffff;
 }
