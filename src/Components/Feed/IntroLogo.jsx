@@ -74,9 +74,9 @@ const IntroLogo = () => {
         {isVisible && 
         <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute`} />}
       </div>
-    <div ref={movingText} className='font-poppins gradient-text z-20 text-[9vw] flex justify-center mt-[18%] font-extrabold text-center '>
-      <p className='ml-[4vw] cursor-pointer transition-all duration-200 hover:tracking-[1vw] hover:text-shadow-lg h-[20vh] text'>
-      MTS-<span>AUV</span> ZHCET<BlinkingCursor/>
+    <div ref={movingText} className='font-poppins gradient-text z-20 text-[9vw] flex justify-center mt-[18.5%] font-extrabold text-center '>
+      <p className='ml-[4vw] cursor-pointer transition-all duration-200 hover:tracking-[1vw] h-[20vh]'>
+      <span className='text'>MTS </span><span className='text'>-</span><span className='text'>AUV </span><span className='text'>ZHCET</span><BlinkingCursor/>
       </p>
        
       </div>

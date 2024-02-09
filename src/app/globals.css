@@ -250,7 +250,8 @@ background-position-y: -65vh;
 
 /* //for shadown of text */
 
-.text:hover span:nth-child(1) {
+.text:hover  {
   color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 10px #19e6ea, 0 0 30px #ffffff;
+  text-shadow: 0px 0px 1px #fff, 1px 1px 0px #19e6ea, 0 1px 2000px #19e6ea;
+  transition: color 200ms ease-in-out, text-shadow 200ms ease-in-out;
 }
