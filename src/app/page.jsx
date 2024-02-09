@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import IntroLogo from '../Components/Feed/IntroLogo'
 import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx'
+import About from '@/Components/Feed/About'
 
 
 
@@ -65,9 +66,9 @@ export default function Home() {
     })
 
     //gsap for chnging the background color of page
-    // tl.to(main.current, {
-    //   backgroundColor: "black",
-    // })
+     tl.to(main.current, {
+       backgroundColor: "black",
+     })
 
     
     
@@ -104,7 +105,7 @@ export default function Home() {
   return (
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
         <Navbar />
-       {/* <ScrollyVideo src={src} />  */}
+       
        <IntroLogo/> 
 
     <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh]'>
