@@ -17,10 +17,7 @@ export default function Home() {
   const main = useRef(null)
   const videoRef1 = useRef(null)
   const scrollyVideoRef=useRef(null)
-  // const videoRef2 = useRef(null)
-  // const nav = useRef(null)
-  // const movingDiv=useRef(null);
-  
+
 
   useEffect(() => {   
     //  function waste() {
