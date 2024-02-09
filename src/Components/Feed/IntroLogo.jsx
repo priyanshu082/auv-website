@@ -37,9 +37,9 @@ const IntroLogo = () => {
     })
 
     tl.to(parentVideoRef.current,{
-      marginTop:"1000px",
+      marginTop:"1100px",
       width:"50%",
-      x:"-100px",
+      x:"-25vw",
       scrollTrigger:{
         // trigger:parentVideoRef.current,
        scrub:2,
