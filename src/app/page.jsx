@@ -112,7 +112,7 @@ export default function Home() {
 
     <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh]'>
 
-    <video src="/Comp_1.mp4" ref={videoRef1} className='absolute mt-[100px] opacity-0 w-[100%] sm:w-[100%] rounded-[70px]' autoPlay loop muted/>
+    {/* <video src="/Comp_1.mp4" ref={videoRef1} className='absolute mt-[100px] opacity-0 w-[100%] sm:w-[100%] rounded-[70px]' autoPlay loop muted/> */}
 
   <div className='z-20 flex flex-col justify-center items-center'>
       

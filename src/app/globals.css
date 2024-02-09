@@ -237,7 +237,7 @@ background-position-y: -65vh;
 }
 
 .gradient-text {
-  background: linear-gradient(180deg, #3e6c68 120%, #131414 150.5%);
+  background: linear-gradient(180deg, #3e6c68 120%, #000000 98.5%);
   background-clip: text;
   color: transparent;
 }
