@@ -110,7 +110,7 @@ export default function Home() {
        {/* <ScrollyVideo src={src} />  */}
        <IntroLogo/> 
 
-      {/* <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh]'>
+    <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh]'>
 
     <video src="/Comp_1.mp4" ref={videoRef1} className='absolute mt-[100px] opacity-0 w-[100%] sm:w-[100%] rounded-[70px]' autoPlay loop muted/>
 
@@ -136,7 +136,7 @@ export default function Home() {
 
         </div> 
 
-      </div> */}
+      </div> 
 
     </div>
 

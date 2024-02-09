@@ -40,7 +40,7 @@ const IntroLogo = () => {
       marginTop:"700px",
       scrollTrigger:{
         // trigger:parentVideoRef.current,
-       scrub:true,
+       scrub:2,
         pin:true
       }
     })
@@ -56,7 +56,8 @@ const IntroLogo = () => {
     // })
 
     tl.to(movingText.current,{
-      y:"-700px",
+      opacity:0,
+      y:"-100px",
       scrollTrigger:{
         scrub:2,
         //markers:true,
@@ -77,18 +78,10 @@ const IntroLogo = () => {
        <div ref={parentVideoRef} className="absolute h-[100%] w-[100%]" >
         <Image ref={imageRef} src={machine}  className={`image-transition ${isVisible ? 'opacity-0' : 'opacity-100'} absolute`} />
         {isVisible && 
-        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute`} />
-        
-        }
+        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute`} />}
       </div>
-      {/* {!isVisible &&
-      <Image ref={imageRef} src={machine}  width="100%" height="100%" className='absolute'/>
-      }
-    {isVisible && 
-      <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{opacity:1}}  width="100%" height="100%" className='absolute z-2'/>
-    } */}
-    <div ref={movingText} className='mt-[29vh] font-poppins z-20 text-[11.75vw] flex justify-center font-extrabold text-center'>
-        <p className='gradient-text'> MTS-AUV ZHCET</p>
+    <div ref={movingText} className='font-poppins gradient-text z-20 text-[11.75vw] flex justify-center mt-[16%] font-extrabold text-center mb-[4.5%]'>
+       MTS-AUV ZHCET
       </div>
     </div>
   )
