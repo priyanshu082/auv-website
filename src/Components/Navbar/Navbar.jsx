@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { navBottom } from "./data";
 import { motion } from "framer-motion";
-import logo from './img/auv1.png'
 import Image from "next/image";
 
 import { useRef, useState } from "react";
@@ -19,40 +18,35 @@ const Navbar = () => {
 
 
   return (
+    <motion.div className="z-[9999] absolute w-full ">
+
     <motion.div
-      className="bg-black flex flex-row justify-between items-center pt-[10px]" >
+    className={` hidden md:flex justify-center items-center font-poppins font-light text-[12px] pb-[8px] pt-[13px] bg-zinc-900` } >
 
       <Link 
       onClick={()=>setActive("HOME")}
       href="/" 
-      className="w-4/12 flex justify-start">
-          <Image src={logo} height={60} width={60}/>
+      className="text-white">
+         <Image src="/apple.svg" height={17} width={17}/>
       </Link>
 
 
-      <motion.div className="hidden md:flex flex-row lg:w-7/12 md:w-8/12 justify-end ml-[100px] pt-[5px]">
         {navBottom.map((items, index) => (
           <Link
           onClick={()=>setActive(items.name)}
            href={items.link} key={index} 
-           className={`${active===items.name ? "text-gray-300 scale-110" : "text-gray-200"} button flex flex-col justify-normal items-center font-poppins font-light text-[19px] hover:scale-110` }>
+           className={`${active===items.name ? "text-gray-200 scale-105" : "text-[#ffffffcc]"} ml-[4vw] flex items-center font-poppins hover:text-white duration-300 ease-in` }>
             {items.name}
              <div className="transition-line"/>
           </Link>
         ))}
-      </motion.div>
+    </motion.div>
 
-         <motion.div>
-          <div onClick={()=>(setToggle(!toggle))}
-          className={`md:hidden `}>
-          <div className={`bar bar1 ${toggle ? 'change' : ''}`}></div>
-          <div className={`bar bar2 ${toggle ? 'change' : ''}`}></div>
-          <div className={`bar bar3 ${toggle ? 'change' : ''}`}></div>
-          </div>
+         
           <Pop
         toggle={toggle}
         setToggle={setToggle}/>
-          </motion.div> 
+        
     </motion.div>
   )
 }
