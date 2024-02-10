@@ -20,7 +20,6 @@ export default function Home() {
 
 
   useEffect(() => {   
-
       const tl = gsap.timeline({
       scrollTrigger: {
         trigger: main.current,
@@ -29,7 +28,7 @@ export default function Home() {
       }
     })
 
-    //gsap for chnging the background color of page
+    
      tl.to(main.current, {
        backgroundColor: "black",
      })
@@ -90,7 +89,10 @@ export default function Home() {
       </div> 
 
       <div className='z-20 flex flex-row-reverse justify-center items-center w-[100vw] pl-[4vh]'>
+   
+
         <video src='/video2.mp4' autoPlay loop muted className='h-[60vh] w-[60vw] mr-[-8vw]'/>
+     
         <div ref={textDiv} className=' text-gray-200 flex flex-col  '>
          <h6 className='text-[3vw] font-extrabold'>
          Freaking Fast

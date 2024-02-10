@@ -29,25 +29,29 @@ const IntroLogo = () => {
       scrollTrigger:{
         trigger:main.current,
         //markers:true,
-        start:"10px top",
-        end:"+=200px top",
-        toggleActions: 'play reverse play reverse',
+        start:"50px top",
+        end:"+=800px top",
+        scrub:true,
+        toggleActions:'play reverse play reverse',
         onEnter:()=> setIsVisible(true),
         onLeaveBack:()=>setIsVisible(false),
       }
     })
 
     tl.to(parentVideoRef.current,{
-      paddingTop:"20vh",
-      marginTop:"127vh",
-      width:"40%",
-      x:"-20vw",
-
+      width:"48%",
+      y:"135vh",
+      x:"-18vw",
       scrollTrigger:{
-       scrub:true,
-       pin:true
+      trigger:main.current,
+      toggleActions: 'play reverse play reverse',
+      start:"50px top",
+      end:"+=900px top",
+      //markers:true,
+     scrub:3,
       }
     })
+
 
   
 
