@@ -2,19 +2,35 @@
 
 const navBottom=[
     {
-        name:"HOME",
+        name:"Home",
         link:"/"
     },
     {
-        name:"TEAM",
+        name:"Team",
         link:"/TEAM"
     },
     {
-        name:"EVENT",
+        name:"Event",
         link:"/EVENT"
     },
     {
-        name:"GALLERY",
+        name:"Project",
+        link:"/GALLERY"
+    },
+    {
+        name:"Sponsors",
+        link:"/GALLERY"
+    },
+    {
+        name:"Tech",
+        link:"/GALLERY"
+    },
+    {
+        name:"History",
+        link:"/GALLERY"
+    },
+    {
+        name:"Gallery",
         link:"/GALLERY"
     },
 ]

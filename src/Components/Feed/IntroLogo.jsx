@@ -48,7 +48,7 @@ const IntroLogo = () => {
       start:"50px top",
       end:"+=900px top",
       //markers:true,
-     scrub:3,
+     scrub:2,
       }
     })
 
@@ -83,8 +83,8 @@ const IntroLogo = () => {
         }
       </div>
     <div ref={movingText} className='font-poppins gradient-text z-20 text-[9vw] flex justify-center mt-[50%] sm:mt-[45.5%] md:mt-[17%] font-extrabold text-center '>
-      <p className='ml-[4vw] cursor-pointer transition-all duration-200 hover:tracking-[0.5vw] h-[20vh]'>
-      <span className='text'>MTS </span><span className='text'>-</span><span className='text'>AUV </span><span className='text'>ZHCET</span>
+      <p className='ml-[2vw] cursor-pointer h-[20vh] text transition-tracking duration-300 ease-in-out'>
+      MTS-AUV ZHCET
       </p>
       </div>
     </div>

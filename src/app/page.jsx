@@ -27,9 +27,9 @@ export default function Home() {
     })
 
     
-     tl.to(main.current, {
-       backgroundColor: "black",
-     })
+    //  tl.to(main.current, {
+    //    backgroundColor:"black",
+    //  })
 
     
     
@@ -65,13 +65,13 @@ export default function Home() {
 
   return (
     <div ref={main} className='flex flex-col bg-black overflow-x-hidden'>
-      <div className='z-[600] md:pl-[40px]'>
+      
         <Navbar />
-      </div>
-      <div>
+   
        <div className='ml-[-2vh]'>
        <IntroLogo/> 
        </div>
+      <div>
 
       <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh] '>
        <div className='z-20 flex flex-col justify-center items-center h-[100%] w-[100%]'>

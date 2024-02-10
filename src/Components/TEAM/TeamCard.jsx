@@ -15,9 +15,7 @@ const TeamCard = () => {
     viewport={{ once: true, minTop: 0.5, maxTop: 0.75 }} 
     variants={fadeIn('down','tween',0.05,1)}
     className="group flex-row w-[430px] lg:w-[400px] h-[250px] mt-[120px] mx-[auto]">
-
-  
-
+      
       <motion.div className='bg-white flex justify-center flex-col p-[20px] mr-[20px]'>
         
         <motion.div 
