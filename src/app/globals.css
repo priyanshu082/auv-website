@@ -1,0 +1,253 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Protest+Riot&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    display: inline-block;
+    margin-left: 20px;
+    padding:8px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out ;
+  }
+
+  .transition-line {
+    margin-top: 3px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.3s ease; 
+    
+  }
+
+  /* Hover effect */
+  .button:hover .transition-line{
+    width: 100%;
+    background-color: grey;
+  }
+
+  .button:hover{
+    color: grey;
+    transform:scale(1.25)
+  }
+
+
+
+  
+  .bar {
+    width: 20px;
+    height: 3px;
+    background-color: #aaa6c3;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .bar1.change {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  
+  .bar2.change {
+    opacity: 0;
+  }
+  
+  .bar3.change {
+    transform: rotate(45deg) translate(-4px, -6px);
+  }
+  
+  .black-gradient {
+    background: #000000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .shadow-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .shadow-img {
+    background-color: hsla(43, 20%, 93%, 0.784);
+    border-radius: 50%;
+    filter: blur(15px);
+    animation: shadow 1.7s infinite alternate;
+  }
+
+  .floating-img {
+    animation: floaty 1.7s infinite alternate;
+  }
+
+  @keyframes floaty {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(15px);
+    }
+  }
+  
+  @keyframes shadow {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(.85, .85);
+    }
+  }  
+  
+  
+  
+.violet-gradient {
+  background: #a587e6;
+  background: linear-gradient(-90deg, #a994d8 0%, rgba(4, 3, 4, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #7753c7 -70%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.green-pink-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #000000 5.9%, #bf61ff 98.5%);
+  background: -webkit-linear-gradient(-90.13deg, #090909 5.9%, #bf61ff 98.5%);
+  box-shadow: -2px 2px 5px #bf61ff;
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #11998e,
+    #38ef7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #ec008c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec008c,
+    #fc6767
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+
+.clubs-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.clubs-card {
+  background: transparent;
+}
+
+.clubs-card:hover {
+  background: var(--black-gradient);
+}
+
+
+
+.team-image{
+  /* object-fit: contain;  */
+  aspect-ratio:2/3;
+  /* border-radius: 80px; */
+
+}
+
+.bg-Intro{
+  background-image: url("/public/machine-img.png");
+  background-size: 100% auto;
+background-position-y: -65vh;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #bfbcbc 10%, #000000 99.5%);
+  background-clip: text;
+  color: transparent;
+ 
+}
+
+.image-transition,
+.video-transition {
+  transition: opacity 1s ease-in-out;
+}
+
+/* //for shadown of text */
+
+.text:hover  {
+  color: #fff;
+  text-shadow: 0px 0px 1px #fff, 1px 0px 0px #19e6ea, 0 1px 20px #19e6ea;
+  transition: color 200ms ease-in-out, text-shadow 200ms ease-in-out;
+}
+
