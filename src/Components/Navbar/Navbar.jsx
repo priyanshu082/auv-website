@@ -37,12 +37,12 @@ const Navbar = () => {
            href={items.link} key={index} 
            className={`${active===items.name ? "text-gray-300 scale-110" : "text-gray-200"} button flex flex-col justify-normal items-center font-poppins font-light text-[19px] hover:scale-110` }>
             {items.name}
-            {/* <div className="transition-line"/> */}
+             <div className="transition-line"/>
           </Link>
         ))}
       </motion.div>
 
-        {/* <motion.div>
+         <motion.div>
           <div onClick={()=>(setToggle(!toggle))}
           className={`md:hidden `}>
           <div className={`bar bar1 ${toggle ? 'change' : ''}`}></div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Pop
         toggle={toggle}
         setToggle={setToggle}/>
-          </motion.div> */}
+          </motion.div> 
     </motion.div>
   )
 }
