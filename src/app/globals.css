@@ -243,7 +243,6 @@ background-position-y: -65vh;
   transition: opacity 1s ease-in-out;
 }
 
-/* //for shadown of text */
 
 .text:hover  {
   color: #fff;
