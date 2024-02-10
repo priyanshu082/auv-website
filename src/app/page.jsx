@@ -28,7 +28,7 @@ export default function Home() {
       }
     })
 
-    //gsap for chnging the background color of page
+    
      tl.to(main.current, {
        backgroundColor: "black",
      })
