@@ -10,7 +10,7 @@ import Pop from "./Pop";
 
 const Navbar = () => {
 
-  const [toggle, setToggle] =useState(false)
+  const [toggle, setToggle] =useState(true)
   const [active ,setActive]=useState("")
 
   const nav=useRef(null);
@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-    className={`z-[9999] flex justify-center items-center font-poppins font-light text-[12px] pb-[8px] pt-[13px] bg-zinc-900` } >
+    className={`z-[9999] hidden  md:flex justify-center items-center font-poppins font-light text-[12px] pb-[8px] pt-[13px] bg-zinc-900` } >
 
       <Link 
       onClick={()=>setActive("HOME")}

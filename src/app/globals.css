@@ -101,9 +101,10 @@ background-position-y: -65vh;
 }
 
 .gradient-text {
-  background: linear-gradient(180deg, #f4f3f3 8%, #000000 32.5%);
+  background: linear-gradient(180deg, #ffffff 25%, #000000 99.5%);
   background-clip: text;
   color: transparent;
+  display: inline-block;
 }
 
 .image-transition,
