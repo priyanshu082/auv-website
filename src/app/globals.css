@@ -216,16 +216,11 @@
   background: var(--black-gradient);
 }
 
-.team-card{
-  /* transform ease-out duration-500 rounded-[60px] */
-  transform: ease-in-out;
-  transition-duration: 500ms;
-  border-radius: 60px;
-}
+
 
 .team-image{
-  object-fit: contain; 
-  aspect-ratio:1/1;
+  /* object-fit: contain;  */
+  aspect-ratio:2/3;
   /* border-radius: 80px; */
 
 }
