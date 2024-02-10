@@ -40,7 +40,7 @@ const IntroLogo = () => {
 
     tl.to(parentVideoRef.current,{
       width:"48%",
-      y:"135vh",
+      y:"132vh",
       x:"-18vw",
       scrollTrigger:{
       trigger:main.current,

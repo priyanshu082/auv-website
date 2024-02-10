@@ -23,9 +23,6 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
-  scrolly-video:
-    specifier: ^0.0.17
-    version: 0.0.17
 
 devDependencies:
   autoprefixer:
@@ -2110,10 +2107,6 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
-  /mp4box@0.4.9:
-    resolution: {integrity: sha512-APZb4ZaCBBXdyxA9nXF5lVb/xc2OPRWbnxwlHOn7tXxiBVchpLUl+nZMF52MLLv0oESnZBSy5qnDj9sRE9LCoQ==}
-    dev: false
-
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
@@ -2616,13 +2609,6 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: false
 
-  /scrolly-video@0.0.17:
-    resolution: {integrity: sha512-nVA1B/Jl8rWzIT54eGDepoem2xqpXXGG68680jJNN1I7qyd7SHXwwdvvBElxLBajvKrqE1VNYsdPsOWSqZiTOg==}
-    dependencies:
-      mp4box: 0.4.9
-      ua-parser-js: 1.0.37
-    dev: false
-
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -3022,10 +3008,6 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
-
-  /ua-parser-js@1.0.37:
-    resolution: {integrity: sha512-bhTyI94tZofjo+Dn8SN6Zv8nBDvyXTymAdM3LDI/0IboIUwTu1rEhW7v2TfiVsoYWgkQ4kOVqnI8APUFbIQIFQ==}
-    dev: false
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}

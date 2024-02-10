@@ -4,8 +4,6 @@ import Navbar from '../Components/Navbar/Navbar'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import IntroLogo from '../Components/Feed/IntroLogo'
-import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx'
-import About from '@/Components/Feed/About'
 
 
 
