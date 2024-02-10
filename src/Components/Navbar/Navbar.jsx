@@ -10,7 +10,7 @@ import Pop from "./Pop";
 
 const Navbar = () => {
 
-  const [toggle, setToggle] =useState(true)
+  const [toggle, setToggle] =useState(false)
   const [active ,setActive]=useState("")
 
   const nav=useRef(null);
@@ -18,8 +18,10 @@ const Navbar = () => {
 
 
   return (
+    <motion.div className="z-[9999] absolute w-full ">
+
     <motion.div
-    className={`z-[9999] hidden  md:flex justify-center items-center font-poppins font-light text-[12px] pb-[8px] pt-[13px] bg-zinc-900` } >
+    className={` hidden md:flex justify-center items-center font-poppins font-light text-[12px] pb-[8px] pt-[13px] bg-zinc-900` } >
 
       <Link 
       onClick={()=>setActive("HOME")}
@@ -38,19 +40,13 @@ const Navbar = () => {
              <div className="transition-line"/>
           </Link>
         ))}
-   
+    </motion.div>
 
-         <motion.div>
-          <div onClick={()=>(setToggle(!toggle))}
-          className={`md:hidden `}>
-          <div className={`bar bar1 ${toggle ? 'change' : ''}`}></div>
-          <div className={`bar bar2 ${toggle ? 'change' : ''}`}></div>
-          <div className={`bar bar3 ${toggle ? 'change' : ''}`}></div>
-          </div>
+         
           <Pop
         toggle={toggle}
         setToggle={setToggle}/>
-          </motion.div> 
+        
     </motion.div>
   )
 }
