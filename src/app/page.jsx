@@ -104,7 +104,10 @@ export default function Home() {
 
   return (
     <div ref={main} className='flex flex-col bg-black h-full overflow-x-hidden '>
+      <div className='z-[600] md:pl-[40px]'>
+
         <Navbar />
+      </div>
        
        <IntroLogo/> 
 
