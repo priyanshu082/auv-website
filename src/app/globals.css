@@ -19,15 +19,15 @@
   }
   
   .bar {
-    width: 20px;
-    height: 3px;
+    width: 17px;
+    height: 1px;
     background-color: #ffffffcc;
-    margin: 4px 0;
+    margin: 3.5px 0;
     transition: 0.2s;
   }
   
   .bar1.change {
-    transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-3.5px, 3px);
   }
   
   .bar2.change {
@@ -35,7 +35,7 @@
   }
   
   .bar3.change {
-    transform: rotate(45deg) translate(-4px, -6px);
+    transform: rotate(45deg) translate(-3.5px, -3px);
   }
   
   .black-gradient {
