@@ -40,8 +40,9 @@ const IntroLogo = () => {
 
     tl.to(parentVideoRef.current,{
       width:"48%",
-      y:"132vh",
+      y:"130vh",
       x:"-18vw",
+     Top:"0px",
       scrollTrigger:{
       trigger:main.current,
       toggleActions: 'play reverse play reverse',
@@ -50,22 +51,21 @@ const IntroLogo = () => {
       //markers:true,
      scrub:2,
       }
-    })
-
-
-  
+    },"anim")
 
     tl.to(movingText.current,{
       opacity:0,
-      y:"-100px",
+      y:"20%",
+      scale:2,
+     
       scrollTrigger:{
-        scrub:2,
+         scrub:4,
         //markers:true,
         start:"top top",
-        end:"+=150px top",
-       // toggleActions: 'play reverse play reverse',
+        end:"+=250px top",
+    
       }
-    })
+    },"anim")
 
     
   },[])
@@ -75,15 +75,15 @@ const IntroLogo = () => {
     <div 
     ref={main}
     className="h-[100vh] w-[100vw] flex justify-center">
-       <div ref={parentVideoRef} className="absolute h-[100%] w-[100%] md:mt-[-1.5%] " >
-        <Image ref={imageRef} src={machine}  className={`image-transition ${isVisible ? 'opacity-0' : 'opacity-100'} absolute md:mt-[0%] sm:mt-[26%] mt-[36%]`} />
+       <div ref={parentVideoRef} className="absolute h-[100%] w-[100%] md:mt-[-1.5%]" >
+        <Image ref={imageRef} src={machine}  className={`image-transition ${isVisible ? 'opacity-0' : 'opacity-100'} absolute md:mt-[5vh] sm:mt-[26%] mt-[36%]`} />
         
         {isVisible && 
-        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:mt-[0%] sm:mt-[30%] mt-[36%]`} />
+        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:mt-[5vh] sm:mt-[26%] mt-[36%]`} />
         }
       </div>
-    <div ref={movingText} className='font-poppins z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[17%] font-extrabold '>
-      <p className='ml-[2vw] cursor-pointer h-fit gradient-text text transition-tracking duration-300 ease-in-out'>
+    <div  className='font-poppins z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[19.5%] font-bold '>
+      <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit text-[white] gradient-text text'>
       MTS-AUV ZHCET
       </p>
       </div>
@@ -93,6 +93,8 @@ const IntroLogo = () => {
 
 export default IntroLogo
 
+
+// gradient-text text transition-tracking duration-300 ease-in-out
 
 
 

@@ -16,7 +16,7 @@ const Pop = ({ toggle, setToggle }) => {
     <div className='md:hidden flex flex-col h-[100vh]'>
       <div className='flex flex-col'>
 
-    <motion.div className=' flex flex-row justify-between px-[20px] py-[15px] bg-zinc-900'>
+    <motion.div className=' flex flex-row justify-between px-[20px] py-[15px] bg-zinc-900 shadow-3xl shadow-[#ffffffcc]md:shadow-none'>
 
       <div className=''>
         <Link
@@ -26,10 +26,10 @@ const Pop = ({ toggle, setToggle }) => {
         </Link>
       </div>
 
-      <div className='pr-[10px] '>
+      <div className='pr-[10px] pt-[4px]'>
         <div onClick={() => (setToggle(!toggle))} className={`md:hidden`}>
           <div className={`bar bar1 ${toggle ? 'change' : ''}`}></div>
-          <div className={`bar bar2 ${toggle ? 'change' : ''}`}></div>
+          <div className={`bar opacity-0 bar2 ${toggle ? 'change' : ''}`}></div>
           <div className={`bar bar3 ${toggle ? 'change' : ''}`}></div>
         </div>
       </div>
@@ -37,17 +37,24 @@ const Pop = ({ toggle, setToggle }) => {
     </motion.div>
 
     <motion.div
-    key={toggle ? 'visible' : 'hidden'}
+     key={toggle ? 'visible' : 'hidden'}
     initial="hidden"
     animate="show" 
-    variants={fadeInOut(0.1,0.6)}
-    className={` ${toggle ? "flex md:hidden flex-col" : "hidden"} p-[10px] bg-zinc-900 border-primary rounded-b-[40px] font-poppins w-[100vw] font-light text-[#ffffffcc] h-[200px] flex-wrap`}>
+    variants={fadeInOut(0.1,0.5)}
+    className={` ${toggle ? "flex md:hidden flex-col" : "hidden"} p-[10px] bg-zinc-900 border-primary rounded-b-[40px] font-poppins w-[100vw] font-normal text-[#ffffffcc] h-[260px] flex-wrap pb-[30px] pt-[10px]`}>
         {navBottom.map((items,index)=>(
             <Link onClick={()=>{
               setToggle(!toggle);
               setActive(items.name)
-              }} key={index} href={items.link} className={`${active===items.name ? "text-black" : "text-white"} mt-[15px] w-fit ml-[17vw]`}>
+              }} key={index} href={items.link} className={`${active===items.name ? "text-black" : "text-white"} mt-[16px] w-fit ml-[17vw] text-[19px]`}>
+                <motion.div
+                key={toggle ? 'visible' : 'hidden'}
+                initial="hidden"
+                animate="show" 
+                variants={fadeInOut(0.1,1.3)}
+                >
                 {items.name}
+                </motion.div>
             </Link>
         ))}
     </motion.div>

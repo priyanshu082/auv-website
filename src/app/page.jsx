@@ -65,14 +65,9 @@ export default function Home() {
 
   return (
     <div ref={main} className='flex flex-col bg-black overflow-x-hidden'>
-      
-        <Navbar />
-   
-       <div className='ml-[-2vh]'>
+       <div className=''>
        <IntroLogo/> 
        </div>
-      <div>
-
       <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh] '>
        <div className='z-20 flex flex-col justify-center items-center h-[100%] w-[100%]'>
         <div ref={textDiv} className='text-gray-200 flex flex-col ml-[60%]'>
@@ -86,9 +81,8 @@ export default function Home() {
         </div> 
       </div> 
 
-      <div className='z-20 flex flex-row-reverse justify-center items-center w-[100vw] pl-[4vh]'>
-   
-
+      <div className='z-20 flex flex-col md:flex-row-reverse justify-center items-center w-[100vw] pl-[4vh]'>
+  
         <video src='/video2.mp4' autoPlay loop muted className='h-[60vh] w-[60vw] mr-[-8vw]'/>
      
         <div ref={textDiv} className=' text-gray-200 flex flex-col  '>
@@ -114,11 +108,6 @@ export default function Home() {
         </div> 
 
       </div>
-
-
-    </div>
-
-
 
   )
 }
