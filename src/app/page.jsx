@@ -66,12 +66,9 @@ export default function Home() {
   return (
     <div ref={main} className='flex flex-col bg-black overflow-x-hidden'>
       
-        <Navbar />
-   
        <div className='md:ml-[-2vh]'>
        <IntroLogo/> 
        </div>
-      <div className='flex flex-col'>
 
       <div ref={parentVideoDiv} className='flex flex-col w-[100vw] h-[100vh] '>
        <div className='z-20 flex flex-col justify-center items-center h-[100%] w-[100%]'>
@@ -113,11 +110,6 @@ export default function Home() {
         </div> 
 
       </div>
-
-
-    </div>
-
-
 
   )
 }
