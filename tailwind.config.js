@@ -14,6 +14,8 @@ module.exports = {
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
+        apple:['SF Pro Display'],
+        apple2:['SF Pro Text'],
         poppins: ['Poppins', 'sans-serif'],
         primary:['Oswald','sans-serif'],
         secondary:['Protest Riot','sans-serif'],
@@ -30,7 +32,7 @@ module.exports = {
          'xl': '1280px',
        },
        boxShadow:{
-        '3xl': '0 -12px 40px -8px rgb(0 0 0 / 0.25)',
+        '3xl': '0 -5px 40px -6px rgb(0 0 0 / 0.25)',
        }
     },
   },
