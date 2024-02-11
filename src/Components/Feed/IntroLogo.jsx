@@ -40,8 +40,9 @@ const IntroLogo = () => {
 
     tl.to(parentVideoRef.current,{
       width:"48%",
-      y:"134vh",
+      y:"130vh",
       x:"-18vw",
+     Top:"0px",
       scrollTrigger:{
       trigger:main.current,
       toggleActions: 'play reverse play reverse',
@@ -75,13 +76,13 @@ const IntroLogo = () => {
     ref={main}
     className="h-[100vh] w-[100vw] flex justify-center">
        <div ref={parentVideoRef} className="absolute h-[100%] w-[100%] md:mt-[-1.5%]" >
-        <Image ref={imageRef} src={machine}  className={`image-transition ${isVisible ? 'opacity-0' : 'opacity-100'} absolute md:mt-[0.5%] sm:mt-[26%] mt-[36%]`} />
+        <Image ref={imageRef} src={machine}  className={`image-transition ${isVisible ? 'opacity-0' : 'opacity-100'} absolute md:mt-[5vh] sm:mt-[26%] mt-[36%]`} />
         
         {isVisible && 
-        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:mt-[0%] sm:mt-[30%] mt-[36%]`} />
+        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:mt-[5vh] sm:mt-[26%] mt-[36%]`} />
         }
       </div>
-    <div  className='font-poppins z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[17%] font-bold '>
+    <div  className='font-poppins z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[19.5%] font-bold '>
       <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit text-[white] gradient-text text'>
       MTS-AUV ZHCET
       </p>
