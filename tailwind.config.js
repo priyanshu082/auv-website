@@ -32,10 +32,10 @@ module.exports = {
          'xl': '1280px',
        },
        boxShadow:{
-        'nav': '0 -7px 30px -8px rgb(0 0 0 / 0.25)',
-        'smallBox': '0 2px 100px 2px rgb(0 0 0 / 0.25)',
-        'div': '0px -10px 40px -30px rgb(0 0 0 / 0.25)',
-        'div2': '0px -16px 40px -30px rgb(0 0 0 / 0.25)',
+        // 'nav': '0 -7px 30px -8px rgb(0 0 0 / 0.25)',
+        // 'smallBox': '0 2px 100px 2px rgb(0 0 0 / 0.25)',
+        // 'div': '0px -10px 40px -30px rgb(0 0 0 / 0.25)',
+        // 'div2': '0px -16px 40px -30px rgb(0 0 0 / 0.25)',
        }
     },
   },

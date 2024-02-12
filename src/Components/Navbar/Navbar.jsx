@@ -18,10 +18,10 @@ const Navbar = () => {
 
 
   return (
-    <motion.div className="z-[9999] absolute w-full md:shadow-nav md:shadow-[#ffffffcc]">
+    <motion.div className="z-[9999] absolute w-full">
 
     <motion.div
-    className={`hidden md:flex justify-center items-center font-apple font-light text-[0.9vw] pb-[8px] pt-[13px] bg-zinc-900` } >
+    className={`hidden md:flex justify-center items-center font-poppins font-light text-[0.9vw] pb-[8px] pt-[13px] bg-zinc-800` } >
 
       <Link 
       onClick={()=>setActive("HOME")}

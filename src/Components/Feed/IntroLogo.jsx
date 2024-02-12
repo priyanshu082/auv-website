@@ -39,9 +39,9 @@ const IntroLogo = () => {
     })
 
     tl.to(parentVideoRef.current,{
-      width:"48%",
+      width:"46%",
       y:"130vh",
-      x:"-18vw",
+      x:"-23vw",
      Top:"0px",
       scrollTrigger:{
       trigger:main.current,
@@ -55,10 +55,10 @@ const IntroLogo = () => {
 
     tl.to(movingText.current,{
       opacity:0,
-      y:"15%",
-      scale:4,
+      y:"-100px",
+
       scrollTrigger:{
-         scrub:3,
+         scrub:2,
         //markers:true,
         start:"top top",
         end:"+=250px top",
@@ -82,7 +82,7 @@ const IntroLogo = () => {
         }
       </div>
     <div className='font-poppins font-bold z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[19.5%]'>
-      <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit  gradient-text text'>
+      <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit gradient-text text'>
       MTS-AUV ZHCET
       </p>
       </div>
