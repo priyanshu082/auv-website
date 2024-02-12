@@ -21,7 +21,7 @@ module.exports = {
         secondary:['Protest Riot','sans-serif'],
       },
       colors: {
-        primary: "#F8F0E3",
+        primary: "#ffffffcc",
         secondary: "#aaa6c3",
         tertiary: "#151030",
       },
@@ -32,7 +32,10 @@ module.exports = {
          'xl': '1280px',
        },
        boxShadow:{
-        '3xl': '0 -5px 40px -6px rgb(0 0 0 / 0.25)',
+        // 'nav': '0 -7px 30px -8px rgb(0 0 0 / 0.25)',
+        // 'smallBox': '0 2px 100px 2px rgb(0 0 0 / 0.25)',
+        // 'div': '0px -10px 40px -30px rgb(0 0 0 / 0.25)',
+        // 'div2': '0px -16px 40px -30px rgb(0 0 0 / 0.25)',
        }
     },
   },
