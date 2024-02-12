@@ -20,7 +20,7 @@ const Footer = () => {
             <div className='flex flex-col gap-6 justify-center items-center w-full sm:w-auto'>
               <Image src={logo} alt="logo" className='min-w-[70px] max-w-[120px] sm:w-[12vw]  lg:w-[12.5vw]' />
               <div className='flex flex-row text-white gap-1 w-full justify-center '>
-                <MapPinIcon className="text-gray-300 w-[15px] h-[15px]" />
+                <MapPinIcon className="text-gray-300 w-[15px] h-[15px] mt-[2px]" />
                 <div className=' text-[13px] '>
                   Main Building,<br />
                   ZHCET,AMU,<br />
@@ -89,8 +89,8 @@ const Footer = () => {
             </div>
           </div>
 
-        <div className=' flex border-t-[1px] border-slate-600 pt-[10px] mt-[20px] justify-center items-center md:flex-row flex-col'>
-  <p className=' font-medium text-gray-500 text-[12px]'>
+        <div className=' flex border-t-[1px] border-slate-600 pt-[10px] my-[15px] justify-center items-center md:flex-row flex-col'>
+  <p className=' font-medium text-gray-500 text-[13px] cursor-pointer'>
 Developed by Priyanshu Singh 
   </p>
 </div>  
