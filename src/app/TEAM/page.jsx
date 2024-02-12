@@ -17,12 +17,12 @@ const page = () => {
     <div className='bg-white w-[95%] mx-auto mt-[7vh] font-poppins '>
 
       <div className='w-[60%] mx-auto flex flex-col gap-20'>
-      <div className=' w-[100%] mx-auto text-center flex flex-col gap-6'>
-        <div className='text-[#d1a055] font-thin text-[60px] mx-auto text-center'>
+      <div className=' w-[100%] flex flex-col gap-6'>
+        <div className='text-[#d1a055] font-thin text-[60px] text-center'>
       Coming onboard means joining the family
         </div>
-        <div className='font-apple tracking-widest font-thin flex flex-col gap-4'>
-        <p className=''>
+        <div className='font-apple tracking-widest font-thin flex flex-col gap-4 text-center'>
+        <p>
         Philly Reps is a Marketing and Consulting House. We partner with our photographers to offer targeted marketing and consulting support to ensure their work and brands get the exposure they deserve. Because, let&apos;s face it, no one is going to hire you if they don&apos;t know you exist.
         </p>
         <p>
@@ -44,12 +44,10 @@ const page = () => {
 
     <div className='flex flex-col sm:flex-row flex-wrap mx-[10px] sm:mx-[25px] bg-white justify-between mt-[20px]'>
       
-    <TeamCard photo="/Ammar.jpeg"/>
-      <TeamCard photo="/Falak.png"/>
-      <TeamCard photo="/Anas.png"/>
-      <TeamCard photo="/Ammar.jpeg"/>
-      <TeamCard photo="/Falak.png"/>
-      <TeamCard photo="/Anas.png"/>
+     <TeamCard photo="/Ammar.jpeg" name="Mohd. Ammar"/>
+      <TeamCard photo="/priyanshu.jpeg" name="Priyanshu Singh"/>
+      <TeamCard photo="/Falak.png" name="Falak Fatima"/>
+     
       
     </div>
     </div>

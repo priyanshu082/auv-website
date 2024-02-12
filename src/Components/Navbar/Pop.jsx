@@ -41,12 +41,12 @@ const Pop = ({ toggle, setToggle }) => {
     initial="hidden"
     animate="show" 
     variants={fadeInOut(0.1,0.5)}
-    className={` ${toggle ? "flex md:hidden flex-col" : "hidden"} p-[10px] bg-zinc-900 border-primary rounded-b-[40px] font-apple w-[100vw] font-normal text-[#ffffffcc] h-[260px] flex-wrap pb-[30px] pt-[10px]`}>
+    className={` ${toggle ? "flex md:hidden flex-col" : "hidden"} p-[10px] bg-zinc-800 border-primary rounded-b-[40px] font-apple w-[100vw] font-normal text-[#ffffffcc] h-[260px] flex-wrap pb-[30px] pt-[10px]`}>
         {navBottom.map((items,index)=>(
             <Link onClick={()=>{
               setToggle(!toggle);
               setActive(items.name)
-              }} key={index} href={items.link} className={`${active===items.name ? "text-black" : "text-white"} mt-[16px] w-fit ml-[17vw] text-[19px]`}>
+              }} key={index} href={items.link} className={`${active===items.name ? "text-zinc-500 scale-105 font-bold" : "text-primary"} mt-[16px] w-fit ml-[17vw] text-[19px]`}>
                 <motion.div
                 key={toggle ? 'visible' : 'hidden'}
                 initial="hidden"
