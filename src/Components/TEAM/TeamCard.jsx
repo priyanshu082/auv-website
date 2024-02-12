@@ -1,13 +1,11 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
-import { fadeIn, delay } from '../../utils/motion'
 import Image from 'next/image'
 
 // import linkedin from '../Footer/img/linkedin.svg'
 
-const TeamCard = ({photo}) => {
+const TeamCard = ({photo,name}) => {
   return (
     <div className='flex flex-col gap-5 sm:gap-7 font-poppins mt-[20px] sm:w-[31%] mb-[30px] sm:mb-[50px]'>
       {/* image */}
@@ -18,7 +16,7 @@ const TeamCard = ({photo}) => {
       {/* name position */}
       <div className='ml-[5px] flex flex-col gap-2'>
         <div className='tracking-[3.75px] font-semibold text-[15px]'>
-          Mohd. Ammar
+          {name}
         </div>
         <div className='font-light text-[15px] tracking-[2px] '>
         FOUNDER + AGENT + CREATIVE CONSULTANT
