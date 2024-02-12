@@ -26,7 +26,7 @@ module.exports = {
         tertiary: "#151030",
       },
        screens: {
-         'sm': '450px',
+         'sm': '640px',
          'md': '790px',
          'lg': '1024px',
          'xl': '1280px',

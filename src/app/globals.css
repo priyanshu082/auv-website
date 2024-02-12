@@ -86,7 +86,7 @@
 
 
 .team-image{
-  /* object-fit: contain;  */
+ object-fit: contain; 
   aspect-ratio:2/3;
   /* border-radius: 80px; */
 
@@ -123,6 +123,6 @@ background-position-y: -65vh;
 }
 
 .footer-gradient{
-  background: rgb(0,0,0);
-  background: linear-gradient(126deg, rgba(0,0,0,0.7273503151260504) 20%, rgba(41, 138, 228, 0.238) 100%); 
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(126deg, rgba(0,0,0,0.1273503151260504) 20%, rgba(41, 138, 228, 0.238) 100%); 
 }

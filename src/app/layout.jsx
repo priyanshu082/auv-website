@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
       <meta name="description" content={metadata.description} />
       <meta property="og:image" src={metadata.image} />
     </Head>
-    <body className='bg-black'>
-    <Navbar />
+    <body className=''>
+    <Navbar/>
       {children}
-     <Footer/> 
+     {/* <Footer/>  */}
       </body>
   </html>
   )

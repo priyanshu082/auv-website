@@ -18,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <motion.div className="z-[9999] absolute w-full">
+    <motion.div className="z-[9999] absolute w-full top-0">
 
     <motion.div
     className={`hidden md:flex justify-center items-center font-poppins font-light text-[0.9vw] pb-[8px] pt-[13px] bg-zinc-800` } >

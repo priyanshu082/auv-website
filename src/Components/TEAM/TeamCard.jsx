@@ -9,32 +9,27 @@ import Image from 'next/image'
 
 const TeamCard = () => {
   return (
-    <motion.div 
-    initial='hidden'
-    whileInView='show'
-    viewport={{ once: true, minTop: 0.5, maxTop: 0.75 }} 
-    variants={fadeIn('down','tween',0.05,1)}
-    className="group flex-row w-[430px] lg:w-[400px] h-[250px] mt-[120px] mx-[auto]">
-      
-      <motion.div className='bg-white flex justify-center flex-col p-[20px] mr-[20px]'>
-        
-        <motion.div 
-        initial='hidden'
-        whileInView='show'
-        exit='hidden'
-        variants={delay(0.2,1)}
-        className='flex flex-col text-black font-poppins'>
-        <p className='text-[26px] font-bold'>M.Ammar</p>
-        <p className='text-[16px]'>Chairperson</p>
-        <p className='text-[13px] text-wrap mt-[5px]'>Computer Engg. 2024</p>
-        <a href="" target="_blank" rel="noopener noreferrer" className='cursor-pointer mt-[10px]'>
-        </a>
-        </motion.div>
-      </motion.div>
-      
-        <Image src="/Ammar.jpeg" alt="ammar" height={230} width={230} className='team-image' />
+    <div className='flex flex-col gap-5 sm:gap-7 font-poppins mt-[20px] sm:w-[31%] mb-[30px] sm:mb-[50px]'>
+      {/* image */}
+      <div className=''>
+      <img src="/Ammar.jpeg"  className='rounded-lg team-image'/>
+      </div>
 
-    </motion.div>
+      {/* name position */}
+      <div className='ml-[5px] flex flex-col gap-2'>
+        <div className='tracking-[3.75px] font-semibold text-[15px]'>
+          Mohd. Ammar
+        </div>
+        <div className='font-light text-[15px] tracking-[2px] '>
+        FOUNDER + AGENT + CREATIVE CONSULTANT
+        </div>
+      </div>
+
+      {/* message */}
+      <div className='ml-[5px] text-[16px] font-apple '>
+      In West Philadelphia, born and raised… Khalid spent his early days curating visual displays. He went on to merchandise some of Philadelphia’s finest props and antiques before embarking on a 10+ year career in Arts Education. Khalid Stewart defines what it means to be both artist and educator. Equipped with a BFA from the University of The Arts and years of dealing with the art and practice of creating strong visual content, he now manages and directs the vision and the voice of Philly Reps.
+      </div>
+    </div>
 
   )
 }
