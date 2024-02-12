@@ -23,10 +23,10 @@ const page = () => {
         </div>
         <div className='font-apple tracking-widest font-thin flex flex-col gap-4'>
         <p className=''>
-        Philly Reps is a Marketing and Consulting House. We partner with our photographers to offer targeted marketing and consulting support to ensure their work and brands get the exposure they deserve. Because, let's face it, no one is going to hire you if they don't know you exist.
+        Philly Reps is a Marketing and Consulting House. We partner with our photographers to offer targeted marketing and consulting support to ensure their work and brands get the exposure they deserve. Because, let&apos;s face it, no one is going to hire you if they don&apos;t know you exist.
         </p>
         <p>
-        Our House was established by creatives for creatives. We know more than anyone that no talented artist deserves to starve and so we're offering a seat at the table. Call it comfort food, cheerleading, brand management, marketing support, an extra set of eyes, a photo editor, a photo therapist, a rep, a valuable member of your team, or simply someone you can be professionally honest with—we are something different to each and every one of the photographers we work with. And that's exactly the way we like it. In this industry, it's all about making impressions on the right people at the right time, and with the right content. We're here to help you do that in any way needed.
+        Our House was established by creatives for creatives. We know more than anyone that no talented artist deserves to starve and so we&apos;re offering a seat at the table. Call it comfort food, cheerleading, brand management, marketing support, an extra set of eyes, a photo editor, a photo therapist, a rep, a valuable member of your team, or simply someone you can be professionally honest with—we are something different to each and every one of the photographers we work with. And that&apos;s exactly the way we like it. In this industry, it&apos;s all about making impressions on the right people at the right time, and with the right content. We&apos;re here to help you do that in any way needed.
         </p>
         </div>
       </div>

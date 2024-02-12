@@ -12,7 +12,7 @@ const TeamCard = ({photo}) => {
     <div className='flex flex-col gap-5 sm:gap-7 font-poppins mt-[20px] sm:w-[31%] mb-[30px] sm:mb-[50px]'>
       {/* image */}
       <div className=''>
-      <img src={photo}  className='rounded-lg team-image'/>
+      <Image src={photo} height={550} width={550} className='rounded-lg'/>
       </div>
 
       {/* name position */}
