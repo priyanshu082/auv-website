@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Protest+Riot&display=swap');
 
@@ -121,6 +119,10 @@ background-position-y: -65vh;
 }
 
 .blur{
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 
+.footer-gradient{
+  background: rgb(0,0,0);
+  background: linear-gradient(126deg, rgba(0,0,0,0.7273503151260504) 20%, rgba(41, 138, 228, 0.238) 100%); 
+}

@@ -1,6 +1,7 @@
 import './globals.css'
- import Head from 'next/head'
- import Navbar from '../Components/Navbar/Navbar'
+import Head from 'next/head'
+import Navbar from '../Components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
 
 
 export const metadata = {
@@ -17,10 +18,10 @@ export default function RootLayout({ children }) {
       <meta name="description" content={metadata.description} />
       <meta property="og:image" src={metadata.image} />
     </Head>
-    <body className=''>
+    <body className='bg-black'>
     <Navbar />
       {children}
-    {/* <Footer/> */}
+     <Footer/> 
       </body>
   </html>
   )

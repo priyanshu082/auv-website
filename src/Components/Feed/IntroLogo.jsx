@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import Image from 'next/image'
 import machine from "../../../public/machine-img.png"
-import BlinkingCursor from './Blinking'
+
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -55,11 +55,10 @@ const IntroLogo = () => {
 
     tl.to(movingText.current,{
       opacity:0,
-      y:"20%",
-      scale:2,
-     
+      y:"15%",
+      scale:4,
       scrollTrigger:{
-         scrub:4,
+         scrub:3,
         //markers:true,
         start:"top top",
         end:"+=250px top",
@@ -82,8 +81,8 @@ const IntroLogo = () => {
         <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:mt-[5vh] sm:mt-[26%] mt-[36%]`} />
         }
       </div>
-    <div className='font-apple font-bold z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[19.5%]'>
-      <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit text-[white] gradient-text text'>
+    <div className='font-poppins font-bold z-20 text-[9vw] flex justify-center mt-[54%] sm:mt-[44%] md:mt-[19.5%]'>
+      <p ref={movingText} className='ml-[2vw] cursor-pointer h-fit  gradient-text text'>
       MTS-AUV ZHCET
       </p>
       </div>
