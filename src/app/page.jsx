@@ -100,7 +100,7 @@ export default function Home() {
        <IntroLogo/> 
     
       <div ref={parentVideoDiv} className='z-20 flex flex-col w-[100vw] h-[60vh] sm:h-[90vh] items-center justify-center mb-[5vh]'>
-        <div className='flex flex-col mx-auto sm:ml-[55%] font-poppins shadow-smallBox shadow-slate-800 sm:mr-[2vw] pl-[4vw] sm:pl-[7vw] rounded-3xl'>
+        <div className='flex flex-col sm:ml-[55%] font-poppins shadow-smallBox shadow-slate-800 sm:mr-[2vw] px-[10px] sm:pl-[7vw] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-300 font-bold '>
          Double Dive
           </h6>
@@ -111,7 +111,7 @@ export default function Home() {
         </div> 
      
 
-      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] pl-[4vw] sm:pl-[5vw] mb-[5vh]'>
+      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] px-[10px] sm:pl-[5vw] mb-[5vh]'>
   
         <video ref={div2Video} src='/video2.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:mr-[-8vw] sm:mb-[0px] mb-[15vh]'/>
      
@@ -125,9 +125,11 @@ export default function Home() {
           </div>
         </div> 
 
-      <div className='z-20 flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] pl-[4vh] sm:pl-[5vw]'>
-        <video src='/video.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
-        <div ref={textDiv} className=' lex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
+        
+
+      <div className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] mb-[5vh] sm:pl-[5vw]'>
+        <video src='/video.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
+        <div ref={textDiv} className=' flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-300 font-bold'>
          Kraken
           </h6>
