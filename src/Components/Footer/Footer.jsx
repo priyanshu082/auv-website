@@ -3,9 +3,11 @@ import React from 'react'
 import { items, handles } from './data'
 import Image from 'next/image'
 import logo from '../../../public/auv1.png'
-import { MapPinIcon } from "@heroicons/react/24/solid";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MailIcon from '@mui/icons-material/Mail';
 
 
 const Footer = () => {
@@ -14,7 +16,7 @@ const Footer = () => {
 
       <footer className='footer-gradient h-full sm:h-[400px]'>
 
-        <div className={`flex flex-col p-[10px] border-t-[1px] pt-[40px] sm:pb-[0px] sm:border-t-[0.5px] w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
+        <div className={`flex flex-col p-[10px] pt-[40px] sm:pb-[0px]  w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
 
 
           <div className='flex flex-col sm:flex-row h-[100%] justify-center sm:justify-around items-center gap-[10vw]'>
@@ -22,7 +24,7 @@ const Footer = () => {
             <div className='flex flex-col gap-6 justify-center items-center w-full sm:w-auto'>
               <Image src={logo} alt="logo" className='min-w-[70px] max-w-[120px] sm:w-[12vw]  lg:w-[12.5vw]' />
               <div className='flex flex-row text-white gap-1 w-full justify-center '>
-                <MapPinIcon className="text-gray-300 w-[15px] h-[15px] mt-[2px]" />
+                <LocationOnIcon className="text-gray-300 w-[15px] h-[15px] mt-[2px]" />
                 <div className=' text-[13px] '>
                   Main Building,<br />
                   ZHCET,AMU,<br />
@@ -65,27 +67,27 @@ const Footer = () => {
             <div className='flex flex-col justify-around items-center gap-10 font-poppins'>
 
               <div className='flex flex-col justify-center items-center gap-2 '>
-                <div className='text-white text-[14px]'>
+                <div className='text-white text-[17px] tracking-widest font-light'>
                   Follow Us
                 </div>
                 <div className='flex flex-row h-[100%] items-center justify-center'>
                   {handles.map((social, index) => (
                     <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
-                      <Image key={index} src={social.icon} alt={social.name} className={`${index !== handles.length - 1 ? "mr-5" : "mr-2"}  h-[18px] w-[18px] items-center hover:scale-110`} />
+                      <Image key={index} src={social.icon} alt={social.name} className={`${index !== handles.length - 1 ? "mr-5" : "mr-2"} sm:h-[17px] sm:w-[17px]  md:h-[20px] md:w-[20px] items-center hover:scale-110`} />
                     </a>
                   ))}
                 </div>
               </div>
 
-              <div className='flex flex-col items-center text-center justify-center text-white text-[12px] sm:text-[15px] gap-1'>
-                <div>
+              <div className='flex flex-col items-center text-center tracking-tighter justify-center text-white text-[12px] sm:text-[15px] gap-1'>
+                <div className='text-[17px] font-light tracking-widest'>
                   Contact us
                 </div>
-                <div>
-                  icon with number
+                <div className='text-center text-primary'>
+                  <LocalPhoneIcon className='w-[18px] h-[18px] mr-[5px] text-gray-400'/>+91 9837264374, +91 8372537493
                 </div>
-                <div>
-                  icon email@gmail.com
+                <div className='text-center text-primary'>
+                  <MailIcon className='w-[18px] h-[18px] mr-[5px] text-gray-400'/> auvzhcet@gmail.com
                 </div>
               </div>
             </div>
