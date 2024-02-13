@@ -4,6 +4,8 @@ import { items, handles } from './data'
 import Image from 'next/image'
 import logo from '../../../public/auv1.png'
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 const Footer = () => {
@@ -89,9 +91,17 @@ const Footer = () => {
             </div>
           </div>
 
-        <div className=' flex border-t-[1px] border-slate-600 pt-[10px] my-[15px] justify-center items-center md:flex-row flex-col'>
-  <p className=' font-medium text-gray-500 text-[13px] cursor-pointer'>
+        <div className=' flex border-t-[1px] border-slate-700 pt-[10px] my-[15px] justify-center items-center '>
+  <p className=' font-medium text-gray-400 text-[16px] cursor-pointer flex flex-row justify-center items-center'>
 Developed by Priyanshu Singh 
+
+<a href='https://github.com/priyanshu082' target="_blank" rel="noopener noreferrer" className='ml-[10px] pb-[4px]'>
+  <GitHubIcon className='w-[20px] h-[20px] text-blue-500'/>
+</a> 
+
+<a href='https://www.linkedin.com/in/priyanshu-singh-a81975253/' target="_blank" rel="noopener noreferrer" className='ml-[10px] pb-[4px]'>
+  <LinkedInIcon className='w-[20px] h-[20px] text-blue-500'/>
+  </a>
   </p>
 </div>  
         </div>
