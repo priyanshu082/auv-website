@@ -32,4 +32,4 @@ const TeamLead=[
 
 ]
 
-export {Team}
+export {TeamLead}
