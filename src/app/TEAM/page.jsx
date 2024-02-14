@@ -16,23 +16,23 @@ const page = () => {
   return (
     <div className='bg-white w-[95%] mx-auto mt-[7vh] font-poppins '>
 
-      <div className='w-[60%] mx-auto flex flex-col gap-20'>
+      <div className='w-[60%] mx-auto flex flex-col'>
       <div className=' w-[100%] flex flex-col gap-6'>
-        <div className='text-[#d1a055] font-thin text-[60px] text-center'>
+        <div className='text-zinc-400 font-thin text-[60px] text-center'>
       Coming onboard means joining the family
         </div>
         <div className='font-apple tracking-widest font-thin flex flex-col gap-4 text-center'>
-        <p>
+        {/* <p>
         Philly Reps is a Marketing and Consulting House. We partner with our photographers to offer targeted marketing and consulting support to ensure their work and brands get the exposure they deserve. Because, let&apos;s face it, no one is going to hire you if they don&apos;t know you exist.
-        </p>
-        <p>
+        </p> */}
+        {/* <p>
         Our House was established by creatives for creatives. We know more than anyone that no talented artist deserves to starve and so we&apos;re offering a seat at the table. Call it comfort food, cheerleading, brand management, marketing support, an extra set of eyes, a photo editor, a photo therapist, a rep, a valuable member of your team, or simply someone you can be professionally honest with—we are something different to each and every one of the photographers we work with. And that&apos;s exactly the way we like it. In this industry, it&apos;s all about making impressions on the right people at the right time, and with the right content. We&apos;re here to help you do that in any way needed.
-        </p>
+        </p> */}
         </div>
       </div>
 
       <div className='font-poppins w-[100%] mx-auto text-center flex flex-col-reverse gap-4'>
-        <div className='text-[#d1a055] font-normal w-[80%] font-wide text-[60px] mx-auto text-center'>
+        <div className=' text-zinc-400 font-normal w-[80%] font-wide text-[60px] mx-auto text-center'>
            The Team
         </div>
         <div className='font-apple tracking-widest flex flex-col gap-4 font-light'>
@@ -45,8 +45,11 @@ const page = () => {
     <div className='flex flex-col sm:flex-row flex-wrap mx-[10px] sm:mx-[25px] bg-white justify-between mt-[20px]'>
       
      <TeamCard photo="/Ammar.jpeg" name="Mohd. Ammar"/>
-      <TeamCard photo="/priyanshu.jpeg" name="Priyanshu Singh"/>
-      <TeamCard photo="/Falak.png" name="Falak Fatima"/>
+     <TeamCard photo="/Falak.png" name="Falak Fatima"/>
+     <TeamCard photo="/Anas.png" name="Mohd. Anas"/>
+     <TeamCard photo="/Haadi.png" name="Haadi Akhtar"/>
+     <TeamCard photo="/yusuf.png" name="Yusuf hasan"/>
+     <TeamCard photo="/priyanshu.jpeg" name="Priyanshu Singh"/>
      
       
     </div>

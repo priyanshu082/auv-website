@@ -12,9 +12,9 @@ import MailIcon from '@mui/icons-material/Mail';
 
 const Footer = () => {
   return (
-    <div className='bg-black'>
+  
 
-      <footer className='footer-gradient h-full sm:h-[400px]'>
+      <footer className='h-full sm:h-[400px] bg-[#0c1a28] border-t-[0.3px] border-gray-400'>
 
         <div className={`flex flex-col p-[10px] pt-[40px] sm:pb-[0px]  w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
 
@@ -23,8 +23,8 @@ const Footer = () => {
 
             <div className='flex flex-col gap-6 justify-center items-center w-full sm:w-auto'>
               <Image src={logo} alt="logo" className='min-w-[70px] max-w-[120px] sm:w-[12vw]  lg:w-[12.5vw]' />
-              <div className='flex flex-row text-white gap-1 w-full justify-center '>
-                <LocationOnIcon className="text-gray-300 w-[15px] h-[15px] mt-[2px]" />
+              <div className='flex flex-row text-gray-400 gap-1 w-full justify-center '>
+                <LocationOnIcon className="w-[15px] h-[15px] mt-[2px]" />
                 <div className=' text-[13px] '>
                   Main Building,<br />
                   ZHCET,AMU,<br />
@@ -83,10 +83,10 @@ const Footer = () => {
                 <div className='text-[17px] font-light tracking-widest'>
                   Contact us
                 </div>
-                <div className='text-center text-primary'>
+                <div className='text-center text-gray-400'>
                   <LocalPhoneIcon className='w-[18px] h-[18px] mr-[5px] text-gray-400'/>+91 9837264374, +91 8372537493
                 </div>
-                <div className='text-center text-primary'>
+                <div className='text-center text-gray-400'>
                   <MailIcon className='w-[18px] h-[18px] mr-[5px] text-gray-400'/> auvzhcet@gmail.com
                 </div>
               </div>
@@ -108,7 +108,7 @@ Developed by Priyanshu Singh
 </div>  
         </div>
       </footer>
-    </div>
+   
   )
 }
 

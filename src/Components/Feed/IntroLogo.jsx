@@ -52,17 +52,32 @@ const IntroLogo = () => {
       }
     })
 
+    //  gsap.to(main.current,{
+
+    //      scrollTrigger:{
+    //        trigger:main.current,
+    //        start:"top top",
+    //        bottom:"bottom top",
+    //        markers:true,
+    //        pin:true,
+    //      }
+    //  })
+
     tl.to(parentVideoRef.current,{
-      width:width,
-      y:y,
-      x:x,
+       width:width,
+       y:y,
+       x:x,
       scrollTrigger:{
-      trigger:main.current,
+      trigger:parentVideoRef.current,
       toggleActions: 'play reverse play reverse',
       start:"50px top",
       end:"+=900px top",
       //markers:true,
      scrub:2,
+     scrollTrigger:{
+      trigger:parentVideoRef.current,
+      pin:true,
+     }
       }
     },"anim")
 
