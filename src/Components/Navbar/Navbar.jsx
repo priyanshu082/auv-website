@@ -21,13 +21,13 @@ const Navbar = () => {
     <motion.div className="z-[9999] absolute w-full top-0">
 
     <motion.div
-    className={`hidden md:flex justify-center items-center font-poppins font-light text-[0.9vw] pb-[8px] pt-[13px] bg-zinc-800` } >
+    className={`hidden md:flex justify-center items-center font-poppins font-light text-[0.9vw] pb-[8px] pt-[13px] bg-zinc-900` } >
 
       <Link 
       onClick={()=>setActive("HOME")}
       href="/" 
       className="text-white">
-         <Image src="/apple.svg" height={17} width={17}/>
+         <Image src="/AUV.png" height={17} width={17}/>
       </Link>
 
 
