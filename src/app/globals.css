@@ -113,7 +113,13 @@ background-position-y: -65vh;
 
 .text:hover{
   color: #a9a6a6fb;
-  text-shadow: 0px 0px 0px #abadad, 0px 0px 10px #18181b, 0px 0px 10px #7d7f7f;
+  text-shadow: 0px 0px 0px #22caca, 0px 0px 10px #18181b, 0px 0px 10px #7d7f7f;
+  transition: color 500ms ease-in-out, text-shadow 500ms ease-in-out, letter-spacing 500ms ease-in-out;
+  letter-spacing: 0.25vw;
+}
+.auv-text:hover{
+  color: #a9a6a6fb;
+  text-shadow: 0px 0px 0px #22caca, 0px 0px 10px #18181b, 0px 0px 10px #7d7f7f;
   transition: color 500ms ease-in-out, text-shadow 500ms ease-in-out, letter-spacing 500ms ease-in-out;
   letter-spacing: 0.25vw;
 }
