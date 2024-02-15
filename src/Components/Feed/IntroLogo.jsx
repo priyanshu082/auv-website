@@ -105,7 +105,7 @@ const IntroLogo = () => {
     ref={main}
     className="h-[100vh] w-[100vw] flex justify-center">
        <div ref={parentVideoRef} className="absolute h-[100%] w-[100%] md:mt-[-1.5%] overflow-clip mx-auto" >
-        <Image ref={imageRef} src={machine}  className={`image-transition md:scale-100 sm:scale-110 scale-125 ${isVisible ? 'opacity-0' : 'opacity-100'} absolute lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
+        <Image alt="machine" ref={imageRef} src={machine}  className={`image-transition md:scale-100 sm:scale-110 scale-125 ${isVisible ? 'opacity-0' : 'opacity-100'} absolute lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
         
         {isVisible && 
         <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />

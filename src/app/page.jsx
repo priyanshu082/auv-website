@@ -150,7 +150,6 @@ export default function Home() {
           </div>
         </div> 
 
-        
 
       <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] mb-[5vh] opacity-100 sm:pl-[5vw] font-poppins'>
 

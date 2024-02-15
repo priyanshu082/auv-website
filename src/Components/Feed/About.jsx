@@ -39,7 +39,7 @@ import SectionWrapper from '../../HOC/SectionWrapper'
       <motion.div
         variants={slideUp(1.5, 1)}
         className='shadow-container flex flex-1 flex-col pt-[10px]'>
-        <Image className='floating-img my-[0px] mx-[auto]' src={ghost} height={400} width={400} />
+        <Image alt="ghost" className='floating-img my-[0px] mx-[auto]' src={ghost} height={400} width={400} />
         <div className='shadow-img my-[0px] mx-[auto] w-[210px] h-[20px]'></div>
       </motion.div>
     </motion.div>
