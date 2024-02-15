@@ -149,7 +149,7 @@ export default function Home() {
         </div> 
      
 
-      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] px-[10px] sm:pl-[5vw] mb-[5vh]'>
+      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] px-[10px] sm:pl-[5vw] mb-[5vh] bg-black'>
   
         <video ref={div2Video} src='/video2.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:mr-[-8vw] sm:mb-[0px] mb-[15vh]'/>
      
@@ -163,9 +163,9 @@ export default function Home() {
           </div>
         </div> 
 
-        <div ref={auv1} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
+        {/* <div ref={auv1} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
           AUV
-        </div>
+        </div> */}
 
 
         <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] my-[25vh]'>
@@ -185,12 +185,12 @@ export default function Home() {
      
         </div> 
 
-        <div ref={auv2} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
+        {/* <div ref={auv2} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
           AUV
-        </div>
+        </div> */}
 
 
-      <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[15vh] mb-[15vh]'>
+      <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[15vh] mb-[15vh] bg-black'>
     
         <video ref={div3Video} src='/video.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
         
