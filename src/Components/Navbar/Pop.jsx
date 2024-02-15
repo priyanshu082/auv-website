@@ -22,7 +22,7 @@ const Pop = ({ toggle, setToggle }) => {
         <Link
           onClick={() => setActive("HOME")}
           href="/" >
-          <Image src="/apple.svg" height={25} width={25} />
+          <Image src="/AUV.png" alt="logo" height={25} width={25} />
         </Link>
       </div>
 

@@ -10,17 +10,22 @@ export default function Home() {
 
   const parentVideoDiv = useRef(null)
   const main = useRef(null)
-  const textDiv=useRef(null)
   const div2 =useRef(null);
   const div2Video =useRef(null);
   const div2Box =useRef(null);
   const div3 =useRef(null);
   const div3Video =useRef(null);
   const div3Box =useRef(null);
+  const div4 =useRef(null);
+  const div4Video =useRef(null);
+  const div4Box =useRef(null);
+  
 
 
   useEffect(() => {   
-      const tl = gsap.timeline({
+
+
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: main.current,
         start: '180px top',
@@ -35,7 +40,7 @@ export default function Home() {
         start:"top top",
         bottom:"bottom top",
         scrub:2,
-        toggleActions: 'play reverse play reverse',
+        toggleActions:'play reverse play reverse',
       }
     })
 
@@ -49,6 +54,7 @@ export default function Home() {
         //markers:true,
       }
     },"anim")
+
     div2TL.to(div2Box.current,{
       y:"-10vh",
       scrollTrigger:{
@@ -56,44 +62,60 @@ export default function Home() {
         scrub:10,
         start:"1500px top",
         bottom:"bottom 0px",
-        //markers:true,
+  
       }
     },"anim")
 
-    
-    //  tl.to(main.current, {
-    //    backgroundColor:"black",
-    //  })
+    gsap.to(div3.current,{
+      opacity:0,
+      scrollTrigger:{
+        trigger:div3.current,
+        start:"40% top",
+        bottom:"bottom top",
+        toggleActions:'play reverse play reverse',
+      }
+    })
 
-    
-    
-//gsap for video
-    // gsap.to(videoRef1.current,{
-    //   scrollTrigger:{
-    //     trigger:parentVideoDiv.current,
-    //     markers:true,
-    //     start:'top top',
-    //     end:'+=500px top',
-    //     toggleActions: 'play reverse play reverse',
-    //   },
-    //   opacity:1,
-    //   // duration:0.5,
-    // })
+    gsap.to(main.current,{
+      background:"white",
+      delay:0.5,
+      scrollTrigger:{
+        trigger:div4.current,
+        start:"top 400vh",
+        bottom:"+=200px top",
+        toggleActions:'play reverse play reverse',
+      }
+    })
 
-    // gsap.to(videoRef1.current,{
-    //   y:"0px",
-    //   // scale:1.2,
-    //   scrollTrigger:{
-    //     trigger:videoRef1.current,
-    //      scrub:3,
-    //     //markers:true,
-    //     start:'top 0',
-    //     end:'+=600px 0',
-    //     toggleActions: 'play reverse play reverse',
-    //      pin:true,
-    //      pinSpacing:false,
-    //   },
-    // })
+
+
+    const div4TL= gsap.timeline({
+      scrollTrigger:{
+        trigger:div4.current,
+        //markers:true,
+        start:"top 400vh",
+        bottom:"+=200px top",
+         scrub:5,
+        toggleActions:'play reverse play reverse',
+      }
+    })
+
+    div4TL.to(div4Video.current,{
+      width:"95%",
+      y:"-30px",
+    },"div4")
+
+    div4TL.to(div4Box.current.querySelector('h6') ,{
+      scale:1.1,
+      x:"-30px",
+      y:"-30px",
+    },"div4")
+
+    div4TL.to(div4Box.current.querySelector('h2') ,{
+      scale:1.1,
+      x:"30px",
+      y:"-30px",
+    },"div4")
 
   }, []);
 
@@ -128,11 +150,13 @@ export default function Home() {
           </div>
         </div> 
 
-        
 
-      <div className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] mb-[5vh] sm:pl-[5vw]'>
-        <video src='/video.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
-        <div ref={textDiv} className=' flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
+      <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] mb-[5vh] opacity-100 sm:pl-[5vw] font-poppins'>
+
+        <video ref={div3Video} src='/video.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
+
+        
+        <div ref={div3Box} className=' flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-100 font-bold'>
          Kraken
           </h6>
@@ -140,6 +164,24 @@ export default function Home() {
           SEA5.0 is not your ordinary mermaid, it got 4 BlueRobotics T200 thruster each pulling in 24 amps. That is more than your house can pull. Specially crafted for underwater use, it uses  hydrocarbon bearing lubricated by water giving it a top speed of 5m/s.  No mermaid can play tag with this bad boy
           </p>
           </div>
+        </div> 
+
+
+        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] mt-[25vh] mb-[10vh]'>
+  
+        <div ref={div4Box} className='flex flex-col mb-[7vh]'>
+         <h6 className='text-[6vw] mx-auto text-gray-700 font-bold tracking-wider'>
+         Sea like never before
+          </h6>
+          <h2 className=' text-gray-400 tracking-tighter sm:text-[1.25vw] text-[3.5vw] w-[75%] text-center mx-auto'>
+          Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
+          </h2>
+          </div>
+          
+            <div ref={div4Video} className='w-[70%] h-[80%] mx-auto overflow-hidden rounded-3xl'>
+          <video  src='/resberry.mp4' autoPlay loop muted className='w-[100%]'/>
+            </div>
+     
         </div> 
 
       </div>
