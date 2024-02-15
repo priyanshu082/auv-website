@@ -62,7 +62,7 @@ const Page = () => {
                         </div>
                     </div>
 
-                    <div ref={videoRef} className='w-[70%] h-[80%] mx-auto overflow-hidden rounded-xl' >
+                    <div ref={videoRef} className='w-[60%] h-[80%] mx-auto overflow-hidden rounded-xl' >
                         <video src='/pathDetector.mp4' loop muted autoPlay className='w-[100%]' />
                     </div>
 
