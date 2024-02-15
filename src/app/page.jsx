@@ -19,6 +19,8 @@ export default function Home() {
   const div4 =useRef(null);
   const div4Video =useRef(null);
   const div4Box =useRef(null);
+  const auv1 =useRef(null);
+  const auv2 =useRef(null);
   
 
 
@@ -66,16 +68,6 @@ export default function Home() {
       }
     },"anim")
 
-    // gsap.to(div3.current,{
-    //   opacity:1,
-    //   scrollTrigger:{
-    //     trigger:div3.current,
-    //     //markers:true,
-    //     start:"top 100vh",
-    //     bottom:"bottom top",
-    //     toggleActions:'play reverse play reverse',
-    //   }
-    // })
 
     gsap.to(main.current,{
       background:"white",
@@ -88,6 +80,26 @@ export default function Home() {
       }
     })
 
+    gsap.to(auv1.current,{
+      opacity:1,
+      scrollTrigger:{
+        trigger:auv1.current,
+        start:"top 200vh",
+        end:"+=200px 200vh",
+        toggleActions:'play reverse play reverse',
+      }
+    })
+
+    gsap.to(auv2.current,{
+      opacity:1,
+      scrollTrigger:{
+        trigger:auv2.current,
+
+        start:"top top",
+        bottom:"bottom top",
+        toggleActions:'play reverse play reverse',
+      }
+    })
 
     const div4TL= gsap.timeline({
       scrollTrigger:{
@@ -116,6 +128,7 @@ export default function Home() {
       x:"30px",
       y:"-30px",
     },"div4")
+
 
   }, []);
 
@@ -150,7 +163,7 @@ export default function Home() {
           </div>
         </div> 
 
-        <div className='text-[20vw] text-black text-center ease-in-out duration-1000 font-poppins font-extralight auv-text cursor-pointer'>
+        <div ref={auv1} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
           AUV
         </div>
 
@@ -172,7 +185,7 @@ export default function Home() {
      
         </div> 
 
-        <div className='text-[20vw] text-black text-center ease-in-out duration-1000 font-poppins font-extralight auv-text cursor-pointer'>
+        <div ref={auv2} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
           AUV
         </div>
 
