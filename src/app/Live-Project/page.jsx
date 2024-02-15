@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 
-const page = () => {
+const Page = () => {
     
     const videoRef=useRef(null)
     const heading=useRef(null)
@@ -81,4 +81,4 @@ If you think cameras are creepy enough, wait till you see the RealSense. Powered
   )
 }
 
-export default page
+export default Page
