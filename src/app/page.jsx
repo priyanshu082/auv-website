@@ -66,27 +66,27 @@ export default function Home() {
       }
     },"anim")
 
-    gsap.to(div3.current,{
-      opacity:0,
+    // gsap.to(div3.current,{
+    //   opacity:1,
+    //   scrollTrigger:{
+    //     trigger:div3.current,
+    //     //markers:true,
+    //     start:"top 100vh",
+    //     bottom:"bottom top",
+    //     toggleActions:'play reverse play reverse',
+    //   }
+    // })
+
+    gsap.to(main.current,{
+      background:"white",
       scrollTrigger:{
-        trigger:div3.current,
-        start:"40% top",
+        trigger:div4.current,
+        //markers:true,
+        start:"top 400vh",
         bottom:"bottom top",
         toggleActions:'play reverse play reverse',
       }
     })
-
-    gsap.to(main.current,{
-      background:"white",
-      delay:0.5,
-      scrollTrigger:{
-        trigger:div4.current,
-        start:"top 400vh",
-        bottom:"+=200px top",
-        toggleActions:'play reverse play reverse',
-      }
-    })
-
 
 
     const div4TL= gsap.timeline({
@@ -150,11 +150,36 @@ export default function Home() {
           </div>
         </div> 
 
+        <div className='text-[20vw] text-black text-center ease-in-out duration-700 font-poppins font-bold text cursor-pointer'>
+          AUV
+        </div>
 
-      <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] mb-[5vh] opacity-100 sm:pl-[5vw] font-poppins'>
 
-        <video ref={div3Video} src='/video.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
+        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] my-[25vh]'>
+  
+        <div ref={div4Box} className='flex flex-col mb-[6vh]'>
+         <h6 className='text-[6vw] mx-auto text-gray-700 font-bold tracking-wider'>
+         Sea like never before
+          </h6>
+          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[3.5vw] w-[75%] text-center mx-auto'>
+          Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
+          </h2>
+          </div>
+          
+            <div ref={div4Video} className='w-[70%] mx-auto overflow-hidden rounded-2xl'>
+          <video  src='/resberry.mp4' autoPlay loop muted className='w-[100%]'/>
+            </div>
+     
+        </div> 
 
+        <div className='text-[20vw] text-black text-center ease-in-out duration-700 font-poppins font-bold text cursor-pointer'>
+          AUV
+        </div>
+
+
+      <div ref={div3} className='z-20 px-[10px]  flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[10vh] mb-[15vh]'>
+    
+        <video ref={div3Video} src='/video.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
         
         <div ref={div3Box} className=' flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-100 font-bold'>
@@ -167,22 +192,6 @@ export default function Home() {
         </div> 
 
 
-        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] mt-[25vh] mb-[10vh]'>
-  
-        <div ref={div4Box} className='flex flex-col mb-[7vh]'>
-         <h6 className='text-[6vw] mx-auto text-gray-700 font-bold tracking-wider'>
-         Sea like never before
-          </h6>
-          <h2 className=' text-gray-400 tracking-tighter sm:text-[1.25vw] text-[3.5vw] w-[75%] text-center mx-auto'>
-          Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
-          </h2>
-          </div>
-          
-            <div ref={div4Video} className='w-[70%] h-[80%] mx-auto overflow-hidden rounded-3xl'>
-          <video  src='/resberry.mp4' autoPlay loop muted className='w-[100%]'/>
-            </div>
-     
-        </div> 
 
       </div>
 
