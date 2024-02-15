@@ -25,6 +25,7 @@ const IntroLogo = () => {
 
   useEffect(()=>{
     var x,width,y,marginTop,end
+    
     if(window.innerWidth<560){
      x="0";
      y="48vh"
@@ -52,16 +53,6 @@ const IntroLogo = () => {
       }
     })
 
-    //  gsap.to(main.current,{
-
-    //      scrollTrigger:{
-    //        trigger:main.current,
-    //        start:"top top",
-    //        bottom:"bottom top",
-    //        markers:true,
-    //        pin:true,
-    //      }
-    //  })
 
     tl.to(parentVideoRef.current,{
        width:width,
@@ -108,7 +99,7 @@ const IntroLogo = () => {
         <Image alt="machine" ref={imageRef} src={machine}  className={`image-transition md:scale-100 sm:scale-110 scale-125 ${isVisible ? 'opacity-0' : 'opacity-100'} absolute lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
         
         {isVisible && 
-        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
+        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%] z-100`} />
         }
       </div>
     <div className='font-poppins font-bold z-20 text-[11vw] sm:text-[10vw] md:text-[9vw] flex justify-center mt-[66%] sm:mt-[42%] md:mt-[33.5%] lg:mt-[19.5%]'>
