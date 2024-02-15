@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </div> 
 
-        <div className='text-[20vw] text-black text-center ease-in-out duration-700 font-poppins font-bold text cursor-pointer'>
+        <div className='text-[20vw] text-black text-center ease-in-out duration-1000 font-poppins font-extralight auv-text cursor-pointer'>
           AUV
         </div>
 
@@ -172,12 +172,12 @@ export default function Home() {
      
         </div> 
 
-        <div className='text-[20vw] text-black text-center ease-in-out duration-700 font-poppins font-bold text cursor-pointer'>
+        <div className='text-[20vw] text-black text-center ease-in-out duration-1000 font-poppins font-extralight auv-text cursor-pointer'>
           AUV
         </div>
 
 
-      <div ref={div3} className='z-20 px-[10px]  flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[10vh] mb-[15vh]'>
+      <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[15vh] mb-[15vh]'>
     
         <video ref={div3Video} src='/video.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
         
