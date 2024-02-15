@@ -14,7 +14,7 @@ const Footer = () => {
   return (
   
 
-      <footer className='h-full sm:h-[400px] bg-[#0c1a28] border-t-[0.3px] border-gray-400'>
+      <footer className='h-full sm:h-[400px] bg-[#07131e] border-t-[0.3px] border-gray-700'>
 
         <div className={`flex flex-col p-[10px] pt-[40px] sm:pb-[0px]  w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
 

@@ -27,7 +27,7 @@ const Navbar = () => {
       onClick={()=>setActive("HOME")}
       href="/" 
       className="text-white">
-         <Image src="/AUV.png" height={17} width={17}/>
+         <Image src="/AUV.png" height={20} width={20}/>
       </Link>
 
 
