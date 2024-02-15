@@ -10,12 +10,12 @@ const navBottom=[
         link:"/TEAM"
     },
     {
-        name:"Event",
-        link:"/EVENT"
+        name:"Project",
+        link:"/Live-Project"
     },
     {
-        name:"Project",
-        link:"/GALLERY"
+        name:"Event",
+        link:"/EVENT"
     },
     {
         name:"Sponsors",

@@ -18,7 +18,7 @@ const page = () => {
 
       <div className='w-[60%] mx-auto flex flex-col'>
       <div className=' w-[100%] flex flex-col gap-6'>
-        <div className='text-zinc-400 font-thin text-[60px] text-center'>
+        <div className='text-zinc-600 font-thin text-[60px] text-center'>
       Coming onboard means joining the family
         </div>
         <div className='font-apple tracking-widest font-thin flex flex-col gap-4 text-center'>
@@ -31,8 +31,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className='font-poppins w-[100%] mx-auto text-center flex flex-col-reverse gap-4'>
-        <div className=' text-zinc-400 font-normal w-[80%] font-wide text-[60px] mx-auto text-center'>
+      <div className='font-poppins w-[100%] mx-auto text-center flex flex-col-reverse text-zinc-500 gap-4'>
+        <div className='  font-normal w-[80%] font-wide text-[60px] mx-auto text-center'>
            The Team
         </div>
         <div className='font-apple tracking-widest flex flex-col gap-4 font-light'>

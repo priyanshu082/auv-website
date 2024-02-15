@@ -23,6 +23,9 @@ dependencies:
   framer-motion:
     specifier: ^11.0.3
     version: 11.0.3(react-dom@18.2.0)(react@18.2.0)
+  g:
+    specifier: ^2.0.1
+    version: 2.0.1
   gsap:
     specifier: ^3.12.5
     version: 3.12.5
@@ -32,6 +35,9 @@ dependencies:
   next-images:
     specifier: ^1.8.5
     version: 1.8.5(webpack@5.90.1)
+  pnpm:
+    specifier: ^8.15.2
+    version: 8.15.2
   react:
     specifier: ^18
     version: 18.2.0
@@ -2236,6 +2242,10 @@ packages:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
     dev: true
 
+  /g@2.0.1:
+    resolution: {integrity: sha512-Fi6Ng5fZ/ANLQ15H11hCe+09sgUoNvDEBevVgx3KoYOhsH5iLNPn54hx0jPZ+3oSWr+xajnp2Qau9VmPsc7hTA==}
+    dev: false
+
   /get-intrinsic@1.2.4:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
     engines: {node: '>= 0.4'}
@@ -3081,6 +3091,12 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
     dev: true
+
+  /pnpm@8.15.2:
+    resolution: {integrity: sha512-CtSEkTkCu/5zmI7z2NHFEK6wxlSDur3EBYnBpmNc+GA5vDY5veOdFKPMngJx5/rRx/qJHEfKfH8esGv/3MOTnw==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /postcss-import@15.1.0(postcss@8.4.35):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}

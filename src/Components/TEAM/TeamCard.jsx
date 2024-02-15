@@ -24,9 +24,9 @@ const TeamCard = ({photo,name}) => {
       </div>
 
       {/* message */}
-      <div className='ml-[5px] text-[16px] font-apple '>
+      {/* <div className='ml-[5px] text-[16px] font-apple '>
       In West Philadelphia, born and raised… Khalid spent his early days curating visual displays. He went on to merchandise some of Philadelphia’s finest props and antiques before embarking on a 10+ year career in Arts Education. Khalid Stewart defines what it means to be both artist and educator. Equipped with a BFA from the University of The Arts and years of dealing with the art and practice of creating strong visual content, he now manages and directs the vision and the voice of Philly Reps.
-      </div>
+      </div> */}
     </div>
 
   )
