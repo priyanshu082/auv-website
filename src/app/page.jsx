@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import IntroLogo from '../Components/Feed/IntroLogo'
+import Image from 'next/image'
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -19,8 +20,9 @@ export default function Home() {
   const div4 =useRef(null);
   const div4Video =useRef(null);
   const div4Box =useRef(null);
-  const auv1 =useRef(null);
-  const auv2 =useRef(null);
+  const div4Images =useRef(null);
+  const image1 =useRef(null);
+  const image2 =useRef(null);
   
 
 
@@ -68,35 +70,13 @@ export default function Home() {
       }
     },"anim")
 
-
     gsap.to(main.current,{
       background:"white",
       scrollTrigger:{
+       // markers:true,
         trigger:div4.current,
-        //markers:true,
-        start:"top 400vh",
-        bottom:"bottom top",
-        toggleActions:'play reverse play reverse',
-      }
-    })
-
-    gsap.to(auv1.current,{
-      opacity:1,
-      scrollTrigger:{
-        trigger:auv1.current,
-        start:"top 200vh",
-        end:"+=200px 200vh",
-        toggleActions:'play reverse play reverse',
-      }
-    })
-
-    gsap.to(auv2.current,{
-      opacity:1,
-      scrollTrigger:{
-        trigger:auv2.current,
-
-        start:"top top",
-        bottom:"bottom top",
+        start:"top 220vh",
+        end:"bottom 100vh",
         toggleActions:'play reverse play reverse',
       }
     })
@@ -106,14 +86,18 @@ export default function Home() {
         trigger:div4.current,
         //markers:true,
         start:"top 400vh",
-        bottom:"+=200px top",
+        end:"+=200px top",
          scrub:5,
         toggleActions:'play reverse play reverse',
       }
     })
 
+    div4TL.to(div4.current ,{
+      marginTop:"30vh",
+     },"div4")
+
     div4TL.to(div4Video.current,{
-      width:"95%",
+      width:"100%",
       y:"-30px",
     },"div4")
 
@@ -128,6 +112,30 @@ export default function Home() {
       x:"30px",
       y:"-30px",
     },"div4")
+
+    gsap.to(image1.current,{
+     x:"5vw",
+     duration:1,
+     scrollTrigger:{
+      trigger:div4Images.current,   
+      start:"top top",
+      end:"bottom top",
+      toggleActions:'play none none reverse',
+    }
+    })
+
+    gsap.to(image2.current,{
+     x:"-5vw",
+     duration:1,
+     scrollTrigger:{
+      trigger:div4Images.current,
+      start:"top top",
+      end:"bottom top",
+      toggleActions:'play none none reverse',
+    }
+    })
+
+  
 
 
   }, []);
@@ -151,7 +159,7 @@ export default function Home() {
 
       <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] px-[10px] sm:pl-[5vw] mb-[5vh] bg-black'>
   
-        <video ref={div2Video} src='/video2.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:mr-[-8vw] sm:mb-[0px] mb-[15vh]'/>
+        <video ref={div2Video} src='/LandingPage/jetson.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:mr-[-8vw] sm:mb-[0px] mb-[15vh]'/>
      
         <div ref={div2Box} className='flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-100 font-bold'>
@@ -163,36 +171,36 @@ export default function Home() {
           </div>
         </div> 
 
-        {/* <div ref={auv1} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
-          AUV
-        </div> */}
-
-
-        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] my-[25vh]'>
   
-        <div ref={div4Box} className='flex flex-col mb-[6vh]'>
-         <h6 className='text-[6vw] mx-auto text-gray-700 font-bold tracking-wider'>
+
+        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] mb-[20vh] mt-[35vh]'>
+  
+        <div ref={div4Box} className='flex flex-col mb-[4vh]'>
+         <h6 className='text-[5vw] mx-auto text-gray-700 font-bold tracking-wider'>
          Sea like never before
           </h6>
-          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[3.5vw] w-[75%] text-center mx-auto'>
-          Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
+          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[2.5vw] w-[75%] text-center mx-auto'>
+          If you think cameras are creepy enough, wait till you see the RealSense. Powered by stereo vision and Infrared tech, this can  not only capture but can recreate all your surroundings in 3D. Helps the vehicle navigate using SLAM and still look better than those stupid fishes.
           </h2>
           </div>
           
-            <div ref={div4Video} className='w-[70%] mx-auto overflow-hidden rounded-2xl'>
-          <video  src='/resberry.mp4' autoPlay loop muted className='w-[100%]'/>
+            <div ref={div4Video} className='w-[60%] h-[80%] mx-auto overflow-hidden rounded-2xl'>
+          <video  src='/LandingPage/realSense.mp4' autoPlay loop muted className='w-[100%]'/>
+            </div>
+
+            <div ref={div4Images} className='w-[100%] flex flex-row justify-between mt-[70px] md:mt-[100px]'>
+              <Image ref={image1} src="/LandingPage/objectDetection1.png" height={500} width={500} className='rounded-2xl image1' />
+              <Image ref={image2} src="/LandingPage/objectDetection2.png" height={500} width={500} className='rounded-2xl image2 ' />
             </div>
      
         </div> 
 
-        {/* <div ref={auv2} className='text-[20vw] opacity-0 text-black text-center ease-in-out duration-1000 font-poppins font-semibold auv-text cursor-pointer'>
-          AUV
-        </div> */}
+       
 
 
       <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[15vh] mb-[15vh] bg-black'>
     
-        <video ref={div3Video} src='/video.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
+        <video ref={div3Video} src='/LandingPage/thruster.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
         
         <div ref={div3Box} className=' flex flex-col sm:mr-[2vw] sm:p-[10px] rounded-3xl'>
          <h6 className='sm:text-[40px] text-[4vh] text-slate-100 font-bold'>

@@ -4,7 +4,6 @@ import React, { useEffect, useRef,useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import Image from 'next/image'
-import machine from "../../../public/machine-img.png"
 
 
 
@@ -25,7 +24,7 @@ const IntroLogo = () => {
 
   useEffect(()=>{
     var x,width,y,marginTop,end
-    
+
     if(window.innerWidth<560){
      x="0";
      y="48vh"
@@ -96,15 +95,15 @@ const IntroLogo = () => {
     ref={main}
     className="h-[100vh] w-[100vw] flex justify-center">
        <div ref={parentVideoRef} className="absolute h-[100%] w-[100%] md:mt-[-1.5%] overflow-clip mx-auto" >
-        <Image alt="machine" ref={imageRef} src={machine}  className={`image-transition md:scale-100 sm:scale-110 scale-125 ${isVisible ? 'opacity-0' : 'opacity-100'} absolute lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
+        <Image alt="machine" ref={imageRef} src="/LandingPage/SEA_5.0.png" width={2000} height={2000} className={`image-transition md:scale-100 sm:scale-110 scale-125 ${isVisible ? 'opacity-0' : 'opacity-100'} absolute lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%]`} />
         
         {isVisible && 
-        <video ref={videoRef} autoPlay loop muted src="/Comp_1.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%] z-100`} />
+        <video ref={videoRef} autoPlay loop muted src="/LandingPage/SEA_5.0.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%] z-100`} />
         }
       </div>
-    <div className='font-poppins font-bold z-20 text-[11vw] sm:text-[10vw] md:text-[9vw] flex justify-center mt-[66%] sm:mt-[42%] md:mt-[33.5%] lg:mt-[19.5%]'>
-      <p ref={movingText} className='md:ml-[2vw] cursor-pointer h-fit gradient-text text'>
-      MTS-AUV ZHCET
+    <div className='font-poppins font-medium  z-20 text-[11vw] sm:text-[10vw] md:text-[9vw] flex justify-center mt-[66%] sm:mt-[42%] md:mt-[33.5%] lg:mt-[19.5%]'>
+      <p ref={movingText} className='md:ml-[2vw] transition-all duration-500 ease-in-out cursor-pointer h-fit gradient-text text'>
+      SEA 5.O
       </p>
       </div>
     </div>
