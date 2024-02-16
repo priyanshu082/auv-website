@@ -180,7 +180,7 @@ export default function Home() {
          Sea like never before
           </h6>
           <h2 className=' text-gray-400 sm:text-[1.25vw] text-[2.5vw] w-[75%] text-center mx-auto'>
-          Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
+          If you think cameras are creepy enough, wait till you see the RealSense. Powered by stereo vision and Infrared tech, this can  not only capture but can recreate all your surroundings in 3D. Helps the vehicle navigate using SLAM and still look better than those stupid fishes.
           </h2>
           </div>
           

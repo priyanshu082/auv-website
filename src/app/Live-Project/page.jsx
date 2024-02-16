@@ -41,18 +41,18 @@ const Page = () => {
         }, "section1")
 
         section1TL.to(heading.current, {
-            x: "-30px",
+            x: "-50px",
         }, "section1")
 
         section1TL.to(content.current, {  
-            x: "30px",
+            x: "50px",
         }, "section1")
 
         const tl=gsap.timeline({
             scrollTrigger:{
                 trigger:div1.current, 
                 //markers:true,  
-                start:"top 100px",
+                start:"top 120px",
                 end:"bottom top",
                 toggleActions:'play none none reverse',
               }
@@ -60,7 +60,7 @@ const Page = () => {
 
       tl.to(main.current,{
         background:"white",
-        duration:1,
+        duration:0.5,
       })
 
         tl.to(image1.current,{
@@ -84,21 +84,19 @@ const Page = () => {
             ease:"power1.inOut"
            },"img")
 
-   
-
     })
 
     return (
-        <div ref={main} className='bg-black'>
+        <div ref={main} className='bg-black pt-[20px]'>
 
-            <div className='pt-[40px] w-[90vw] mx-auto'>
+            <div className='w-[90vw] mx-auto'>
                 {/* heading and video */}
                 <div ref={section1} className='w-[100%]'>
-                    <div className='w-[100%] flex flex-col justify-center items-center font-poppins font-medium  mt-[70px] mb-[20px]'>
-                        <div ref={heading} className='text-primary mb-[2vh] mx-auto text-center text-[6vw] '>
-                            On-going project
+                    <div className='w-[100%] flex flex-col justify-center items-center font-poppins font-medium pt-[70px] mb-[20px]'>
+                        <div ref={heading} className='text-primary mx-auto text-center text-[6vw] '>
+                           AutoBase 1.0
                         </div>
-                        <div ref={content} className='text-gray-400 text-[1.2vw] w-[70%] text-center mx-auto font-thin'>
+                        <div ref={content} className='text-gray-400 text-[1.2vw] w-[70%] text-center mx-auto font-light'>
                             If you think cameras are creepy enough, wait till you see the RealSense. Powered by stereo vision and Infrared tech, this can  not only capture but can recreate all your surroundings in 3D. Helps the vehicle navigate using SLAM and still look better than those stupid fishes.
                         </div>
                     </div>
@@ -112,12 +110,12 @@ const Page = () => {
                 {/* images */}
              <div  className='flex flex-col py-[30px] '>
 
-             <div ref={div1} className='w-[100%] flex flex-row justify-between mt-[70px] md:mt-[100px]'>
+             <div ref={div1} className='w-[100%] flex flex-row justify-between mt-[50px]'>
               <Image ref={image1} src="/Live_project/img1.png" height={600} width={600} className='rounded-2xl image1' />
               <Image ref={image2} src="/Live_project/img2.png" height={600} width={600} className='rounded-2xl image2 ' />
             </div>
 
-            <div ref={div2} className='w-[100%] flex flex-row justify-between mt-[70px] md:mt-[100px]'>
+            <div ref={div2} className='w-[100%] flex flex-row justify-between mt-[50px]'>
               <Image ref={image3} src="/Live_project/img2.png" height={600} width={600} className='rounded-2xl image1' />
               <Image ref={image4} src="/Live_project/img4.png" height={600} width={600} className='rounded-2xl image2 ' />
             </div>
