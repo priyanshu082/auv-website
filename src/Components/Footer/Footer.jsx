@@ -14,10 +14,9 @@ const Footer = () => {
   return (
   
 
-      <footer className='h-full sm:h-[400px] bg-[#07131e] border-t-[0.3px] border-gray-700'>
+      <footer className='h-full sm:h-[400px] bg-[#07131e] border-t-[0.3px] border-gray-700 overflow-x-hidden'>
 
-        <div className={`flex flex-col p-[10px] pt-[40px] sm:pb-[0px]  w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
-
+        <div className={`flex flex-col p-[10px] pt-[40px] sm:pb-[0px] w-[98%] font-apple border-slate-700 mx-auto h-[100%]`}>
 
           <div className='flex flex-col sm:flex-row h-[100%] justify-center sm:justify-around items-center gap-[10vw]'>
 
@@ -34,7 +33,7 @@ const Footer = () => {
             </div>
 
 
-          <div className='flex flex-row gap-32 sm:gap-[15vw]'>
+          <div className='flex flex-row gap-[12vw] sm:gap-[9vw] md:gap-[15vw] '>
 
             <div className='flex flex-col flex-wrap h-[100%] items-center justify-center'>
               <div className='text-white text-[15px] sm:text-[18px] font-bold'>
@@ -93,16 +92,18 @@ const Footer = () => {
             </div>
           </div>
 
+
+
         <div className=' flex border-t-[1px] border-slate-700 pt-[10px] my-[15px] justify-center items-center '>
-  <p className=' font-medium text-gray-400 text-[16px] cursor-pointer flex flex-row justify-center items-center'>
+  <p className=' font-medium text-gray-400 text-[14px] sm:text-[16px] cursor-pointer flex flex-row justify-center items-center'>
 Developed by Priyanshu Singh 
 
 <a href='https://github.com/priyanshu082' target="_blank" rel="noopener noreferrer" className='ml-[10px] pb-[4px]'>
-  <GitHubIcon className='w-[20px] h-[20px] text-blue-500'/>
+  <GitHubIcon className=' w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] text-blue-500'/>
 </a> 
 
 <a href='https://www.linkedin.com/in/priyanshu-singh-a81975253/' target="_blank" rel="noopener noreferrer" className='ml-[10px] pb-[4px]'>
-  <LinkedInIcon className='w-[20px] h-[20px] text-blue-500'/>
+  <LinkedInIcon className=' w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] text-blue-500'/>
   </a>
   </p>
 </div>  

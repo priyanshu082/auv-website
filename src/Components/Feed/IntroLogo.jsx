@@ -54,17 +54,17 @@ const IntroLogo = () => {
 
 
     tl.to(parentVideoRef.current,{
-       width:width,
-       y:y,
-       x:x,
+      width:width,
+      y:y,
+      x:x,
       scrollTrigger:{
       trigger:parentVideoRef.current,
       toggleActions: 'play reverse play reverse',
       start:"50px top",
       end:"+=900px top",
       //markers:true,
-     scrub:2,
-     scrollTrigger:{
+      scrub:2,
+      scrollTrigger:{
       trigger:parentVideoRef.current,
       pin:true,
      }
@@ -77,7 +77,7 @@ const IntroLogo = () => {
 
     tl.to(movingText.current,{
       opacity:0,
-      y:"-100px",
+      //y:"-100px",
       scrollTrigger:{
          scrub:2,
         //markers:true,
@@ -101,8 +101,8 @@ const IntroLogo = () => {
         <video ref={videoRef} autoPlay loop muted src="/LandingPage/SEA_5.0.mp4" style={{ opacity: isVisible ? 1 : 0 }} className={`video-transition ${isVisible ? 'opacity-100' : 'opacity-0'} absolute md:scale-100 sm:scale-110 scale-125 lg:mt-[2.75%] md:mt-[17%] sm:mt-[25%] mt-[50%] z-100`} />
         }
       </div>
-    <div className='font-poppins font-medium  z-20 text-[11vw] sm:text-[10vw] md:text-[9vw] flex justify-center mt-[66%] sm:mt-[42%] md:mt-[33.5%] lg:mt-[19.5%]'>
-      <p ref={movingText} className='md:ml-[2vw] transition-all duration-500 ease-in-out cursor-pointer h-fit gradient-text text'>
+    <div ref={movingText} className='font-poppins font-medium z-20 text-[11vw] sm:text-[10vw] md:text-[9vw] flex justify-center mt-[66%] sm:mt-[42%] md:mt-[33.5%] lg:mt-[19.5%]'>
+      <p  className='md:ml-[2vw] transition-all duration-500 ease-in-out cursor-pointer h-fit gradient-text text'>
       SEA 5.O
       </p>
       </div>

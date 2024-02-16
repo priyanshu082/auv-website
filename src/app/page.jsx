@@ -7,22 +7,27 @@ import Image from 'next/image'
 
 
 gsap.registerPlugin(ScrollTrigger);
+
 export default function Home() {
 
   const parentVideoDiv = useRef(null)
   const main = useRef(null)
-  const div2 =useRef(null);
-  const div2Video =useRef(null);
-  const div2Box =useRef(null);
-  const div3 =useRef(null);
-  const div3Video =useRef(null);
-  const div3Box =useRef(null);
-  const div4 =useRef(null);
-  const div4Video =useRef(null);
-  const div4Box =useRef(null);
-  const div4Images =useRef(null);
-  const image1 =useRef(null);
-  const image2 =useRef(null);
+
+  const div2 = useRef(null);
+  const div2Video = useRef(null);
+  const div2Box = useRef(null);
+
+  const div3 = useRef(null);
+  const div3Video = useRef(null);
+  const div3Box = useRef(null);
+
+  const div4 = useRef(null);
+  const div4Video = useRef(null);
+  const div4Box = useRef(null);
+
+  const div4Images = useRef(null);
+  const image1 = useRef(null);
+  const image2 = useRef(null);
   
 
 
@@ -101,6 +106,9 @@ export default function Home() {
       y:"-30px",
     },"div4")
 
+
+   if(window.innerWidth>560){ 
+    
     div4TL.to(div4Box.current.querySelector('h6') ,{
       scale:1.1,
       x:"-30px",
@@ -134,14 +142,17 @@ export default function Home() {
       toggleActions:'play none none reverse',
     }
     })
+  
+  }
 
   
 
 
   }, []);
 
+
   return (
-    <div ref={main} className='flex flex-col font-poppins bg-black overflow-x-hidden'>
+    <div ref={main} className='flex flex-col font-poppins bg-black overflow-x-hidden md:px-[0]'>
 
        <IntroLogo/> 
     
@@ -157,7 +168,7 @@ export default function Home() {
         </div> 
      
 
-      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] px-[10px] sm:pl-[5vw] mb-[5vh] bg-black'>
+      <div ref={div2} className='z-20 flex flex-col sm:flex-row-reverse justify-center max-h-[700px] items-center w-[100vw] h-[80vh] pl-[3vw] sm:mb-[5vh] bg-black'>
   
         <video ref={div2Video} src='/LandingPage/jetson.mp4' autoPlay loop muted className='sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 sm:mr-[-8vw] sm:mb-[0px] mb-[15vh]'/>
      
@@ -172,32 +183,29 @@ export default function Home() {
         </div> 
 
   
-
-        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] mb-[20vh] mt-[35vh]'>
+        <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[100vw] sm:w-[90vw] mx-auto px-[10px] mb-[20vh] mt-[5vh] md:mt-[35vh]'>
   
         <div ref={div4Box} className='flex flex-col mb-[4vh]'>
-         <h6 className='text-[5vw] mx-auto text-gray-700 font-bold tracking-wider'>
+         <h6 className='sm:text-[40px] md:text-[80px] text-[12vw] text-center mx-auto text-gray-700 font-bold tracking-wider'>
          Sea like never before
           </h6>
-          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[2.5vw] w-[75%] text-center mx-auto'>
+          <h2 className=' text-gray-400 md:text-[1.5vw]  sm:text-[2.25vw] text-[3.75vw] w-[75%] text-center mx-auto'>
           If you think cameras are creepy enough, wait till you see the RealSense. Powered by stereo vision and Infrared tech, this can  not only capture but can recreate all your surroundings in 3D. Helps the vehicle navigate using SLAM and still look better than those stupid fishes.
           </h2>
           </div>
           
-            <div ref={div4Video} className='w-[60%] h-[80%] mx-auto overflow-hidden rounded-2xl'>
+            <div ref={div4Video} className='w-[90%] mt-[3vh] sm:mt-[0px] sm:w-[60%] sm:h-[80%] mx-auto overflow-hidden rounded-2xl'>
           <video  src='/LandingPage/realSense.mp4' autoPlay loop muted className='w-[100%]'/>
             </div>
 
-            <div ref={div4Images} className='w-[100%] flex flex-row justify-between mt-[70px] md:mt-[100px]'>
-              <Image ref={image1} src="/LandingPage/objectDetection1.png" height={500} width={500} className='rounded-2xl image1' />
-              <Image ref={image2} src="/LandingPage/objectDetection2.png" height={500} width={500} className='rounded-2xl image2 ' />
+            <div ref={div4Images} className='w-[100%] flex flex-col gap-4 sm:gap-0 sm:flex-row justify-between mt-[30px] md:mt-[100px]'>
+              <Image ref={image1} src="/LandingPage/objectDetection1.png" height={500} width={500} className='rounded-2xl image1 w-[33vw]' />
+              <Image ref={image2} src="/LandingPage/objectDetection2.png" height={500} width={500} className='rounded-2xl image2 w-[33vw]' />
             </div>
      
         </div> 
 
        
-
-
       <div ref={div3} className='z-20 px-[10px] flex flex-col sm:flex-row justify-center items-center w-[100vw] max-[700px] h-[80vh] sm:pl-[5vw] font-poppins mt-[15vh] mb-[15vh] bg-black'>
     
         <video ref={div3Video} src='/LandingPage/thruster.mp4' autoPlay loop muted className=' sm:h-[60vh] sm:w-[60vw] w-[100vw] sm:scale-100 scale-125 ml-[-8vw] sm:mb-[0px] mb-[20vh]'/>
