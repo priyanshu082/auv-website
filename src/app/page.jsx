@@ -73,9 +73,9 @@ export default function Home() {
       background:"white",
       scrollTrigger:{
         trigger:div4.current,
-        //markers:true,
-        start:"top 400vh",
-        bottom:"bottom top",
+       markers:true,
+        start:"top 200vh",
+        end:"bottom 200vh",
         toggleActions:'play reverse play reverse',
       }
     })
@@ -94,9 +94,8 @@ export default function Home() {
       opacity:1,
       scrollTrigger:{
         trigger:auv2.current,
-
         start:"top top",
-        bottom:"bottom top",
+        end:"bottom top",
         toggleActions:'play reverse play reverse',
       }
     })
@@ -106,14 +105,18 @@ export default function Home() {
         trigger:div4.current,
         //markers:true,
         start:"top 400vh",
-        bottom:"+=200px top",
+        end:"+=200px top",
          scrub:5,
         toggleActions:'play reverse play reverse',
       }
     })
 
+    div4TL.to(div4.current ,{
+      marginTop:"30vh",
+     },"div4")
+
     div4TL.to(div4Video.current,{
-      width:"95%",
+      width:"100%",
       y:"-30px",
     },"div4")
 
@@ -128,6 +131,8 @@ export default function Home() {
       x:"30px",
       y:"-30px",
     },"div4")
+
+  
 
 
   }, []);
@@ -170,16 +175,16 @@ export default function Home() {
 
         <div ref={div4} className='z-20 flex flex-col justify-center items-center w-[90vw] mx-auto px-[10px] my-[25vh]'>
   
-        <div ref={div4Box} className='flex flex-col mb-[6vh]'>
-         <h6 className='text-[6vw] mx-auto text-gray-700 font-bold tracking-wider'>
+        <div ref={div4Box} className='flex flex-col mb-[4vh]'>
+         <h6 className='text-[5vw] mx-auto text-gray-700 font-bold tracking-wider'>
          Sea like never before
           </h6>
-          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[3.5vw] w-[75%] text-center mx-auto'>
+          <h2 className=' text-gray-400 sm:text-[1.25vw] text-[2.5vw] w-[75%] text-center mx-auto'>
           Powered by Nvidia’s top of the line boards –Jetson Xavier AGX. Customized cooling for better thermals in confined design. With 128 computing cores it can handle AI tasks on the go. Be it object detection, segmentation or if you just want to  be  pesky underwater Jetson have you got covered.
           </h2>
           </div>
           
-            <div ref={div4Video} className='w-[70%] mx-auto overflow-hidden rounded-2xl'>
+            <div ref={div4Video} className='w-[60%] h-[80%] mx-auto overflow-hidden rounded-2xl'>
           <video  src='/resberry.mp4' autoPlay loop muted className='w-[100%]'/>
             </div>
      
