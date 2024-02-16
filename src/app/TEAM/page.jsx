@@ -44,12 +44,12 @@ const page = () => {
 
     <div className='flex flex-col sm:flex-row flex-wrap mx-[10px] sm:mx-[25px] bg-white justify-between mt-[20px]'>
       
-     <TeamCard photo="/Ammar.jpeg" name="Mohd. Ammar"/>
-     <TeamCard photo="/Falak.png" name="Falak Fatima"/>
-     <TeamCard photo="/Anas.png" name="Mohd. Anas"/>
-     <TeamCard photo="/Haadi.png" name="Haadi Akhtar"/>
-     <TeamCard photo="/yusuf.png" name="Yusuf hasan"/>
-     <TeamCard photo="/priyanshu.jpeg" name="Priyanshu Singh"/>
+     <TeamCard photo="/Team/Ammar.jpeg" name="Mohd. Ammar"/>
+     <TeamCard photo="/Team/Falak.png" name="Falak Fatima"/>
+     <TeamCard photo="/Team/Anas.png" name="Mohd. Anas"/>
+     <TeamCard photo="/Team/Haadi.png" name="Haadi Akhtar"/>
+     <TeamCard photo="/Team/yusuf.png" name="Yusuf hasan"/>
+     <TeamCard photo="/Team/priyanshu.jpeg" name="Priyanshu Singh"/>
      
       
     </div>
