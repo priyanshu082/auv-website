@@ -81,7 +81,7 @@ export default function Home() {
        // markers:true,
         trigger:div4.current,
         start:"top 220vh",
-        end:"bottom 100vh",
+        end:"bottom 320vh",
         toggleActions:'play reverse play reverse',
       }
     })

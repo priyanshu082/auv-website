@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 // import linkedin from '../Footer/img/linkedin.svg'
 
-const TeamCard = ({photo,name}) => {
+const TeamCard = ({photo,name,position}) => {
   return (
     <div className='flex flex-col gap-5 sm:gap-7 font-poppins mt-[20px] sm:w-[31%] mb-[30px] sm:mb-[50px]'>
       {/* image */}
@@ -19,7 +19,7 @@ const TeamCard = ({photo,name}) => {
           {name}
         </div>
         <div className='font-light text-[15px] tracking-[2px] '>
-        FOUNDER + AGENT + CREATIVE CONSULTANT
+        {position}
         </div>
       </div>
 
