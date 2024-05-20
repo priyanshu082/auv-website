@@ -7,8 +7,6 @@ import TeamCard from '../../Components/TEAM/TeamCard'
 
 
 
-
-
 gsap.registerPlugin(ScrollTrigger)
 
 const page = () => {
@@ -45,11 +43,13 @@ const page = () => {
     <div className='flex flex-col sm:flex-row flex-wrap mx-[10px] sm:mx-[25px] bg-white justify-between mt-[20px]'>
       
      <TeamCard photo="/Team/Ammar.jpeg" name="Mohd. Ammar" position="Chairperson"/>
+     <TeamCard photo="/Team/saood.jpeg" name="Saood Ahmad" position="Mentor"/>
      <TeamCard photo="/Team/Falak.png" name="Falak Fatima" position="Mentor"/>
      <TeamCard photo="/Team/Anas.png" name="Mohd. Anas" position="Treasurer"/>
      <TeamCard photo="/Team/Haadi.png" name="Haadi Akhtar" position="R&D Lead"/>
      <TeamCard photo="/Team/yusuf.png" name="Yusuf hasan" position="Computer Lead "/>
      <TeamCard photo="/Team/priyanshu.jpeg" name="Priyanshu Singh" position="Web Developer"/>
+     
      
       
     </div>
